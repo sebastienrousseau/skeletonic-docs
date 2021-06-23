@@ -27,6 +27,9 @@
 #   function docBuild ():
 #     - Build any localized documentation. (default english and french)
 #
+#   function docLeafPygment (): 
+#     - Provides Leaf syntax highlighting for Pygment.
+#
 #   function docSite ():
 #     - Prepare website folder
 #
@@ -57,6 +60,7 @@ function docAll () {
   docVersion
   docCleanUp
   docBuild    
+  docLeafPygment
   docSite
   docServe
 }
@@ -99,6 +103,15 @@ function docBuild () {
   cd fr;
   mkdocs build;
   cd ..;
+}
+
+# docLeafPygment: Compile leaf-pygment locally (Leaf syntax highlighting for Pygment).
+function docLeafPygment () {
+  echo
+  echo "${Blue}[INFO:]${Reset} Installing leaf-pygment locally"
+  cd leaf-pygment && ./compile.sh
+  cd .. && pip install leaf-pygment/dist/leaf-4.1.2.tar.gz
+  echo
 }
 
 # docSite: Prepare website folder
@@ -146,9 +159,10 @@ function docHelp() {
   ${Green}[3]${Reset} Show the version of mkdocs and dependencies installed locally.
   ${Green}[4]${Reset} Clean any existing site folder.
   ${Green}[5]${Reset} Build the localized documentation (Default settings assume English and French locales).
-  ${Green}[6]${Reset} Prepare the Site folder.
-  ${Green}[7]${Reset} Preview the Site using the local HTTP server (serve).
-  ${Green}[8]${Reset} Help menu."
+  ${Green}[6]${Reset} Compile leaf-pygment locally (Leaf syntax highlighting for Pygment).
+  ${Green}[7]${Reset} Prepare the Site folder.
+  ${Green}[8]${Reset} Preview the Site using the local HTTP server (serve).
+  ${Green}[9]${Reset} Help menu."
   echo
   echo "${Blue}[INFO:]${Reset} ${Yellow}Choose an option and press [ENTER]:${Reset}" 
   read a
@@ -159,9 +173,10 @@ function docHelp() {
       3) docVersion ; docHelp ;;
       4) docCleanUp ; docHelp ;;
       5) docBuild ; docHelp ;;
-      6) docSite ; docHelp ;;
-      7) docServe ; docHelp ;;
-      8) docHelp ; docHelp ;;      
+      6) docLeafPygment ; docHelp ;;
+      7) docSite ; docHelp ;;
+      8) docServe ; docHelp ;;
+      9) docHelp ; docHelp ;;      
   *) echo "${Red}[ERROR:]${Reset} Wrong option.";;
   esac
 }

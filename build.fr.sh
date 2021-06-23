@@ -31,6 +31,9 @@
 #   function docNettoyage ():
 #     - Nettoyez le dossier du site web existant.
 #
+#   function docLeafPygment (): 
+#     - Ajoute une coloration syntaxique de code basé sur Leaf pour Pygment.
+#
 #   function docConstruction ():
 #     - Construisez la documentation localisée. (Anglais et Français par défaut)
 #
@@ -63,6 +66,7 @@ function docComplets () {
 	docDependances
   docVersion
   docNettoyage
+  docLeafPygment
   docConstruction    
   docSite
   docWeb
@@ -124,6 +128,15 @@ function docConstruction () {
   cd ..;
 }
 
+# docLeafPygment: Compile leaf-pygment localement (Coloration syntaxique Leaf pour Pygment).
+function docLeafPygment () {
+  echo
+  echo "${Blue}[INFO:]${Reset} Installation de leaf-pygment localement"
+  cd leaf-pygment && ./compile.sh
+  cd .. && pip install leaf-pygment/dist/leaf-4.1.2.tar.gz
+  echo
+}
+
 # docSite: Prépare le dossier du site web
 function docSite () {
   echo
@@ -168,10 +181,11 @@ function docAide() {
   ${Vert}[2]${Reinitialiser} Installez les bibliothèques et dépendances externes requises. 
   ${Vert}[3]${Reinitialiser} Affichez la version du "mkdocs" installée localement.
   ${Vert}[4]${Reinitialiser} Nettoyez le dossier du site web existant.
-  ${Vert}[5]${Reinitialiser} Construisez la documentation localisée. (Anglais et Français par défaut)
-  ${Vert}[6]${Reinitialiser} Préparez le dossier du site web
-  ${Vert}[7]${Reinitialiser} Prévisualisez le site à l'aide d'un serveur HTTP local (serve).
-  ${Vert}[8]${Reinitialiser} Présentez le menu d'aide contextuelle."
+  ${Vert}[5]${Reinitialiser} Ajoute une coloration syntaxique de code basé sur Leaf pour Pygment.
+  ${Vert}[6]${Reinitialiser} Construisez la documentation localisée. (Anglais et Français par défaut)
+  ${Vert}[7]${Reinitialiser} Préparez le dossier du site web
+  ${Vert}[8]${Reinitialiser} Prévisualisez le site à l'aide d'un serveur HTTP local (serve).
+  ${Vert}[9]${Reinitialiser} Présentez le menu d'aide contextuelle."
   echo
   echo "${Bleu}[INFO:]${Reinitialiser} ${Yellow}Choisissez une option et appuyez sur [ENTRÉE]:${Reinitialiser}" 
   read a
@@ -181,10 +195,11 @@ function docAide() {
       2) docDependances ; docAide ;;
       3) docVersion ; docAide ;;
       4) docNettoyage ; docAide ;;
-      5) docNettoyage ; docAide ;;
-      6) docSite ; docAide ;;
-      7) docWeb ; docAide ;;
-      8) docAide ; docAide ;;      
+      5) docLeafPygment ; docAide ;;
+      6) docConstruction ; docAide ;;
+      7) docSite ; docAide ;;
+      8) docWeb ; docAide ;;
+      9) docAide ; docAide ;;      
   *) echo "${Rouge}[ERREUR:]${Reinitialiser} Paramètre incorrect.";;
   esac
 }
