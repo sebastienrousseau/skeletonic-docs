@@ -43,7 +43,7 @@
 #   function docAide ():
 #     - Présentez le menu d'aide contextuelle.
 #
-# (c) Sebastien Rousseau 2021.
+# (c) Sébastien Rousseau 2021.
 # Licencié sous la licence MIT
 #
 
@@ -71,15 +71,24 @@ function docComplets () {
 # docDependances: Installez les bibliothèques et dépendances externes requises.
 function docDependances () {
   echo
-  echo "${Bleu}[INFO:]${Reinitialiser} Installez les bibliothèques et dépendances externes requises."
-  pip install -r requirements.txt;
+  echo "${Vert}[NOTES:]${Reinitialiser} Installation des bibliothèques et dépendances externes."
+  FILE=requirements.txt
+  if [ -f "$FILE" ]; then
+    echo "${Bleu}[INFO:]${Reinitialiser} Mise à jour des dépendances.\n"
+    pip install -r $FILE;
+  else 
+    echo "${Rouge}[ERREUR:]${Reinitialiser} Le fichier "$FILE" n'existe pas.\n"
+    exit 1;
+  fi
   echo
 }
 
 # docVersion: Affichez la version du "mkdocs" installée localement.
 function docVersion () {
   echo
-	echo "Version actuelle disponible:"
+  echo "${Vert}[NOTES:]${Reinitialiser} Affichage de la version du "mkdocs" installée localement."
+  echo
+	echo "${Bleu}[INFO:]${Reinitialiser} La version actuelle disponible est:"
   echo
 	pip freeze | grep mkdocs
   echo
@@ -88,21 +97,28 @@ function docVersion () {
 # docNettoyage: Nettoyez du dossier de site web existant.
 function docNettoyage () {
   echo
-  echo "${Bleu}[INFO:]${Reinitialiser} Nettoyez du dossier de site web existant."
-  rm -rf site
-  mkdir -p site;
+  echo "${Vert}[NOTES:]${Reinitialiser} Nettoyage du dossier de site web existant."
+  DIRECTORY=site
+  if [ -d $DIRECTORY ]; then
+    rm -rf site/;
+    mkdir -p site;
+    echo "${Bleu}[INFO:]${Reinitialiser} Le nettoyage du dossier "site" a été effectué avec succès!"
+  else 
+    echo "${Rouge}[ERREUR:]${Reinitialiser} Le dossier "$DIRECTORY" n'existe pas.\n"
+    exit 1;
+  fi
   echo
 }
 
 # docConstruction: Construisez la documentation localisée. (Anglais et Français par défaut)
 function docConstruction () {
   echo
-  echo "${Bleu}[INFO:]${Reinitialiser} Installation de la documentation anglaise"
+  echo "${Vert}[NOTES:]${Reinitialiser} Installation de la documentation anglaise"
   cd en;
   mkdocs build;
   cd ..;
   echo
-  echo "${Bleu}[INFO:]${Reinitialiser} Installation de la documentation française"
+  echo "${Vert}[NOTES:]${Reinitialiser} Installation de la documentation française"
   cd fr;
   mkdocs build;
   cd ..;
@@ -111,13 +127,13 @@ function docConstruction () {
 # docSite: Prépare le dossier du site web
 function docSite () {
   echo
-  echo "${Bleu}[INFO:]${Reinitialiser} Préparation du site anglais"
+  echo "${Vert}[NOTES:]${Reinitialiser} Préparation du site anglais"
   mv en/site site/en;
   echo
-  echo "${Bleu}[INFO:]${Reinitialiser} Préparation du site français"
+  echo "${Vert}[NOTES:]${Reinitialiser} Préparation du site français"
   mv fr/site site/fr;
   echo
-  echo "<meta http-equiv=\"refresh\" content=\"0; url=/en/\">" > site/index.html;
+  echo "<meta http-equiv=\"refresh\" content=\"0; url=/fr/\">" > site/index.html;
   echo
 }
 
@@ -134,7 +150,7 @@ function docWeb () {
   
   echo
 	echo "Démarrage du serveur Web sur le port 8000:"
-  serve -p 8000 -T site/
+  serve -p 8000 site
   echo
 }
 
@@ -157,7 +173,7 @@ function docAide() {
   ${Vert}[7]${Reinitialiser} Prévisualisez le site à l'aide d'un serveur HTTP local (serve).
   ${Vert}[8]${Reinitialiser} Présentez le menu d'aide contextuelle."
   echo
-  echo "${Bleu}[INFO:]${Reinitialiser} ${Yellow}Choisissez une option et appuyez sur [ENTRER]:${Reinitialiser}" 
+  echo "${Bleu}[INFO:]${Reinitialiser} ${Yellow}Choisissez une option et appuyez sur [ENTRÉE]:${Reinitialiser}" 
   read a
     case $a in
       0) exit 0 ;;

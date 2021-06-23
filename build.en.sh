@@ -117,7 +117,7 @@ function docSite () {
 # docServe: Preview the site using a local HTTP server.
 function docServe () {
   
-  if [ -z "$(command -v serves)" ]; then
+  if [ -z "$(command -v serve)" ]; then
     echo "${Red}[ERROR:]${Reset} You are missing the package 'serve'.";
     echo "${Blue}[INFO:]${Reset} Simply install the package using the Yarn Package Manager";
     echo "yarn global add serve" | pbcopy;
@@ -127,7 +127,7 @@ function docServe () {
   
   echo
 	echo "Starting Serve Mode:"
-  serve -p 8000 -T site/
+  serve -p 8000 site
   echo
 }
 
