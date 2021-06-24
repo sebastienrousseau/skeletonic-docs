@@ -22,7 +22,7 @@
 #     - Show the version of `mkdocs` installed locally.
 #
 #   function docCleanUp ():
-#     - Clean any existing site folder.
+#     - Clean up the existing website folder.
 #
 #   function docBuild ():
 #     - Build any localized documentation. (default english and french)
@@ -82,13 +82,19 @@ function docVersion () {
   echo
 }
 
-# docCleanUp: Clean any existing site folder.
+# docCleanUp: Clean up the existing website folder.
 function docCleanUp () {
   echo
-  echo "${Blue}[INFO:]${Reset} Cleanup"
-  rm -rf site
-  mkdir -p site;
-  echo
+  echo "${Green}[NOTES:]${Reset} Clean up the existing website folder."
+  DIRECTORY=site
+  if [ -d $DIRECTORY ]; then
+    rm -rf $DIRECTORY;
+    mkdir -p $DIRECTORY;
+    echo "${Blue}[INFO:]${Reset} Directory \"$DIRECTORY\" cleaning has been successfully completed!"
+  else 
+    echo "${Red}[ERROR:]${Reset} The Directory \"$DIRECTORY\" does not exist.\n"
+    exit 1;
+  fi
 }
 
 # docBuild: Build any localized documentation. (default english and french)
@@ -157,7 +163,7 @@ function docHelp() {
   ${Green}[1]${Reset} Run all the commands chronologically.
   ${Green}[2]${Reset} Install the required libraries and depedencies.
   ${Green}[3]${Reset} Show the version of mkdocs and dependencies installed locally.
-  ${Green}[4]${Reset} Clean any existing site folder.
+  ${Green}[4]${Reset} Clean up the existing website folder.
   ${Green}[5]${Reset} Build the localized documentation (Default settings assume English and French locales).
   ${Green}[6]${Reset} Compile leaf-pygment locally (Leaf syntax highlighting for Pygment).
   ${Green}[7]${Reset} Prepare the Site folder.

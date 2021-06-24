@@ -104,9 +104,9 @@ function docNettoyage () {
   echo "${Vert}[NOTES:]${Reinitialiser} Nettoyage du dossier de site web existant."
   DIRECTORY=site
   if [ -d $DIRECTORY ]; then
-    rm -rf site/;
-    mkdir -p site;
-    echo "${Bleu}[INFO:]${Reinitialiser} Le nettoyage du dossier "site" a été effectué avec succès!"
+    rm -rf $DIRECTORY;
+    mkdir -p $DIRECTORY;
+    echo "${Bleu}[INFO:]${Reinitialiser} Le nettoyage du dossier "$DIRECTORY" a été effectué avec succès!"
   else 
     echo "${Rouge}[ERREUR:]${Reinitialiser} Le dossier "$DIRECTORY" n'existe pas.\n"
     exit 1;
