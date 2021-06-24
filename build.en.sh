@@ -56,6 +56,7 @@ Yellow='\033[0;93m'     # Yellow
 
 # docAll: Run all the commands chronologically. 
 function docAll () {
+  echo "${Green}[NOTES:]${Reset} External libraries and dependencies installation."    
 	docRequirements
   docVersion
   docCleanUp
@@ -182,7 +183,7 @@ function docHelp() {
       6) docLeafPygment ; docHelp ;;
       7) docSite ; docHelp ;;
       8) docServe ; docHelp ;;
-      9) docHelp ; docHelp ;;      
+      9) docHelp ;;      
   *) echo "${Red}[ERROR:]${Reset} Wrong option.";;
   esac
 }
