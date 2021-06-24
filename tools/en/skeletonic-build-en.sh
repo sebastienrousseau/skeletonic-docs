@@ -16,10 +16,10 @@
 #     - Run all the commands chronologically.
 #
 #   function docRequirements ():
-#     - Install required libraries and depedencies. 
+#     - Install required libraries and dependencies 
 #
 #   function docVersion ():
-#     - Show the version of `mkdocs` installed locally.
+#     - Show the version of mkdocs installed locally.
 #
 #   function docCleanUp ():
 #     - Clean up the existing website folder.
@@ -43,18 +43,10 @@
 # Licensed under the MIT license
 #
 
-# List of colors
-Black='\033[0;90m'      # Black
-Blue='\033[0;94m'       # Blue
-Cyan='\033[0;96m'       # Cyan
-Green='\033[0;92m'      # Green
-Purple='\033[0;95m'     # Purple
-Red='\033[0;91m'        # Red
-Reset='\033[0m'         # Reset
-White='\033[0;97m'      # White
-Yellow='\033[0;93m'     # Yellow
+source tools/en/skeletonic-colors-en.sh
+source tools/en/skeletonic-variables-en.sh
 
-# docAll: Run all the commands chronologically. 
+# docAll: Run all the commands chronologically.
 function docAll () {
   echo "${Green}[NOTES:]${Reset} External libraries and dependencies installation."    
 	docRequirements
@@ -66,18 +58,18 @@ function docAll () {
   docServe
 }
 
-# docRequirements: Install required libraries and depedencies.
+# docRequirements: Install required libraries and dependencies
 function docRequirements () {
   echo
   echo "${Blue}[INFO:]${Reset} Installing requirements files"
-  pip install -r requirements.txt;
+  pip install -r $SKLPATH/requirements.txt ;
   echo
 }
 
-# docVersion: Show the version of `mkdocs` installed locally.
+# docVersion: Show the version of mkdocs installed locally.
 function docVersion () {
   echo
-	echo "Current Version available:"
+	echo "Current version of mkdocs available is:"
   echo
 	pip freeze | grep mkdocs
   echo
@@ -87,7 +79,6 @@ function docVersion () {
 function docCleanUp () {
   echo
   echo "${Green}[NOTES:]${Reset} Clean up the existing website folder."
-  DIRECTORY=site
   if [ -d $DIRECTORY ]; then
     rm -rf $DIRECTORY;
     mkdir -p $DIRECTORY;
@@ -116,8 +107,8 @@ function docBuild () {
 function docLeafPygment () {
   echo
   echo "${Blue}[INFO:]${Reset} Installing leaf-pygment locally"
-  cd leaf-pygment && ./compile.sh
-  cd .. && pip install leaf-pygment/dist/leaf-4.1.2.tar.gz
+  #cd leaf-pygment && ./compile.sh
+  #cd .. && pip install leaf-pygment/dist/leaf-4.1.2.tar.gz
   echo
 }
 
@@ -147,28 +138,30 @@ function docServe () {
   
   echo
 	echo "Starting Serve Mode:"
-  serve -p 8000 site
+  serve -p 8000 site/
   echo
 }
 
 # docHelp: Present the Help Menu.
 function docHelp() {  
   echo
-  echo "${Yellow}┌───────────────────────────────────────────┐${Reset}" 
-  echo "${Yellow}│ ${White}💀 Skeletonic Stylus Documentation v0.0.1${Reset} ${Yellow}│${Reset}"
-  echo "${Yellow}└───────────────────────────────────────────┘${Reset}"
+  echo "${Green}┌───────────────────────────────────────────┐${Reset}" 
+  echo "${Green}│                                           │${Reset}"
+  echo "${Green}│ ${Green}💀 Skeletonic Stylus Documentation v0.0.1 │${Reset}"
+  echo "${Green}│                                           │${Reset}"
+  echo "${Green}└───────────────────────────────────────────┘${Reset}"
   echo
   echo "${Blue}[INFO:]${Reset} ${Yellow}Available options:${Reset}"
   echo "
   ${Green}[0]${Reset} Exit menu.
   ${Green}[1]${Reset} Run all the commands chronologically.
-  ${Green}[2]${Reset} Install the required libraries and depedencies.
-  ${Green}[3]${Reset} Show the version of mkdocs and dependencies installed locally.
+  ${Green}[2]${Reset} Install the required libraries and dependencies
+  ${Green}[3]${Reset} Show the version of mkdocs and dependencies.
   ${Green}[4]${Reset} Clean up the existing website folder.
-  ${Green}[5]${Reset} Build the localized documentation (Default settings assume English and French locales).
-  ${Green}[6]${Reset} Compile leaf-pygment locally (Leaf syntax highlighting for Pygment).
-  ${Green}[7]${Reset} Prepare the Site folder.
-  ${Green}[8]${Reset} Preview the Site using the local HTTP server (serve).
+  ${Green}[5]${Reset} Build the localized documentation.
+  ${Green}[6]${Reset} Compile leaf-pygment locally.
+  ${Green}[7]${Reset} Prepare the site folder.
+  ${Green}[8]${Reset} Preview site.
   ${Green}[9]${Reset} Help menu."
   echo
   echo "${Blue}[INFO:]${Reset} ${Yellow}Choose an option and press [ENTER]:${Reset}" 
