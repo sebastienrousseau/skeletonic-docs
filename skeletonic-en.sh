@@ -1,3 +1,4 @@
+#!/bin/sh
 #
 #  ____  _        _      _              _        ____
 # / ___|| | _____| | ___| |_ ___  _ __ (_) ___  |  _ \  ___   ___ ___
@@ -9,12 +10,13 @@
 # https://docs.skeletonic.io/en
 
 source tools/en/skeletonic-colors-en.sh
+source tools/en/skeletonic-utilities-en.sh
 
-startApp(){
+function setup (){
 	echo
-	echo "${Blue}[INFO:]${Reset} Installing \"en\" application..."
-	./tools/en/skeletonic-build-en.sh
+	echo "${Blue}[INFO]${Reset} Preparing the English documentation..."
+	./tools/en/skeletonic-docs-en.sh
 	echo
 }
 
-startApp
+setup
