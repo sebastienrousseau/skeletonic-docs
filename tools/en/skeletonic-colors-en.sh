@@ -23,4 +23,4 @@ Purple='\033[0;95m'  # Purple
 Red='\033[0;91m'     # Red
 Reset='\033[0m'      # Reset
 White='\033[0;97m'   # White
-Yellow='\033[0;93m'  # Yello
+Yellow='\033[0;93m'  # Yellow

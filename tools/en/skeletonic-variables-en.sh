@@ -16,6 +16,7 @@
 
 # Variables
 DIRECTORY=site
+TOOLS=tools
 PROGNAME="$(basename $0)"
 REPO=squidfunk
 REQUIREMENTS=requirements.txt
