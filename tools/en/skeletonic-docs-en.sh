@@ -48,7 +48,7 @@ source tools/en/skeletonic-variables-en.sh
 
 # docAll: Run all the commands chronologically.
 function docAll () {
-  echo "${Green}[NOTES:]${Reset} External libraries and dependencies installation."    
+  echo "${Yellow}[WARNING]${Reset} External libraries and dependencies installation."    
 	docRequirements
   docVersion
   docCleanUp
@@ -61,7 +61,7 @@ function docAll () {
 # docRequirements: Install required libraries and dependencies
 function docRequirements () {
   echo
-  echo "${Blue}[INFO:]${Reset} Installing requirements files"
+  echo "${Blue}[INFO]${Reset} Installing requirements files"
   pip install -r $SKLPATH/requirements.txt ;
   echo
 }
@@ -78,13 +78,13 @@ function docVersion () {
 # docCleanUp: Clean up the existing website folder.
 function docCleanUp () {
   echo
-  echo "${Green}[NOTES:]${Reset} Clean up the existing website folder."
+  echo "${Yellow}[WARNING]${Reset} Clean up the existing website folder."
   if [ -d $DIRECTORY ]; then
     rm -rf $DIRECTORY;
     mkdir -p $DIRECTORY;
-    echo "${Blue}[INFO:]${Reset} Directory \"$DIRECTORY\" cleaning has been successfully completed!"
+    echo "${Blue}[INFO]${Reset} Directory \"$DIRECTORY\" cleaning has been successfully completed!"
   else 
-    echo "${Red}[ERROR:]${Reset} The Directory \"$DIRECTORY\" does not exist.\n"
+    echo "${Red}[ERROR]${Reset} The Directory \"$DIRECTORY\" does not exist.\n"
     exit 1;
   fi
 }
@@ -92,12 +92,12 @@ function docCleanUp () {
 # docBuild: Build any localized documentation. (default english and french)
 function docBuild () {
   echo
-  echo "${Blue}[INFO:]${Reset} Installing the English documentation"
+  echo "${Blue}[INFO]${Reset} Installing the English documentation"
   cd en;
   mkdocs build;
   cd ..;
   echo
-  echo "${Blue}[INFO:]${Reset} Installing the French documentation"
+  echo "${Blue}[INFO]${Reset} Installing the French documentation"
   cd fr;
   mkdocs build;
   cd ..;
@@ -106,7 +106,7 @@ function docBuild () {
 # docLeafPygment: Compile leaf-pygment locally (Leaf syntax highlighting for Pygment).
 function docLeafPygment () {
   echo
-  echo "${Blue}[INFO:]${Reset} Installing leaf-pygment locally"
+  echo "${Blue}[INFO]${Reset} Installing leaf-pygment locally"
   #cd leaf-pygment && ./compile.sh
   #cd .. && pip install leaf-pygment/dist/leaf-4.1.2.tar.gz
   echo
@@ -115,10 +115,10 @@ function docLeafPygment () {
 # docSite: Prepare website folder
 function docSite () {
   echo
-  echo "${Blue}[INFO:]${Reset} Prepare the English website"
+  echo "${Blue}[INFO]${Reset} Prepare the English website"
   mv en/site site/en;
   echo
-  echo "${Blue}[INFO:]${Reset} Prepare the French website"
+  echo "${Blue}[INFO]${Reset} Prepare the French website"
   mv fr/site site/fr;
   echo
   echo "<meta http-equiv=\"refresh\" content=\"0; url=/en/\">" > site/index.html;
@@ -129,8 +129,8 @@ function docSite () {
 function docServe () {
   
   if [ -z "$(command -v serve)" ]; then
-    echo "${Red}[ERROR:]${Reset} You are missing the package 'serve'.";
-    echo "${Blue}[INFO:]${Reset} Simply install the package using the Yarn Package Manager";
+    echo "${Red}[ERROR]${Reset} You are missing the package 'serve'.";
+    echo "${Blue}[INFO]${Reset} Simply install the package using the Yarn Package Manager";
     echo "yarn global add serve" | pbcopy;
     echo "$(pbpaste)"
     exit 1;
@@ -151,7 +151,7 @@ function docHelp() {
   echo "${Green}│                                           │${Reset}"
   echo "${Green}└───────────────────────────────────────────┘${Reset}"
   echo
-  echo "${Blue}[INFO:]${Reset} ${Yellow}Available options:${Reset}"
+  echo "${Blue}[INFO]${Reset} ${Yellow}Available options:${Reset}"
   echo "
   ${Green}[0]${Reset} Exit menu.
   ${Green}[1]${Reset} Run all the commands chronologically.
@@ -164,7 +164,7 @@ function docHelp() {
   ${Green}[8]${Reset} Preview site.
   ${Green}[9]${Reset} Help menu."
   echo
-  echo "${Blue}[INFO:]${Reset} ${Yellow}Choose an option and press [ENTER]:${Reset}" 
+  echo "${Blue}[INFO]${Reset} ${Yellow}Choose an option and press [ENTER]:${Reset}" 
   read a
     case $a in
       0) exit 0 ;;
@@ -177,7 +177,7 @@ function docHelp() {
       7) docSite ; docHelp ;;
       8) docServe ; docHelp ;;
       9) docHelp ;;      
-  *) echo "${Red}[ERROR:]${Reset} Wrong option.";;
+  *) echo "${Red}[ERROR]${Reset} Wrong option.";;
   esac
 }
 
