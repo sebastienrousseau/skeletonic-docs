@@ -15,9 +15,10 @@
 #
 
 # Variables
-readonly SKLPATH=tools
 readonly DIRECTORY=site
+readonly PROGNAME="$(basename $0)"
 readonly REPO=squidfunk
 readonly REQUIREMENTS=requirements.txt
+readonly SKLPATH=tools
 readonly THEME=mkdocs-material
 readonly THEMEFOLDER=material

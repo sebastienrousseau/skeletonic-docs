@@ -15,12 +15,12 @@
 #
 
 # List of colors
-readonly Black='\033[0;90m'   # Black
-readonly Blue='\033[0;94m'    # Blue
-readonly Cyan='\033[0;96m'    # Cyan
-readonly Green='\033[0;92m'   # Green
-readonly Purple='\033[0;95m'  # Purple
-readonly Red='\033[0;91m'     # Red
-readonly Reset='\033[0m'      # Reset
-readonly White='\033[0;97m'   # White
-readonly Yellow='\033[0;93m'  # Yellow
+Black='\033[0;90m'   # Black
+Blue='\033[0;94m'    # Blue
+Cyan='\033[0;96m'    # Cyan
+Green='\033[0;92m'   # Green
+Purple='\033[0;95m'  # Purple
+Red='\033[0;91m'     # Red
+Reset='\033[0m'      # Reset
+White='\033[0;97m'   # White
+Yellow='\033[0;93m'  # Yello
