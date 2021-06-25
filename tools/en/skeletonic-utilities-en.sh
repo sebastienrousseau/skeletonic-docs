@@ -21,7 +21,7 @@ function error () {
   pid pid
   echo "❌ [${Red}ERROR${Reset}:${Blue}${pid}${Reset}] ${Green}$(date +%F)${Reset}: ${Blue}${PROGNAME}${Reset}: ${Blue}${1}${Reset}: An error has occurred. Exited with status ${code}.${Reset}"
   logs
-  echo ❌ [ERROR:${pid}] $(date +%F): ${PROGNAME}: ${1}: An error has occurred. Exited with status ${code}.
+  echo [ERROR:${pid}] $(date +%F): ${PROGNAME}: ${1}: An error has occurred. Exited with status ${code}.
   exit "${code}"
 }
 

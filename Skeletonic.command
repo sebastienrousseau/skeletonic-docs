@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 #
 #  ____  _        _      _              _        ____
 # / ___|| | _____| | ___| |_ ___  _ __ (_) ___  |  _ \  ___   ___ ___
@@ -9,14 +9,6 @@
 # Skeletonic Stylus Documentation v0.0.1
 # https://docs.skeletonic.io/en
 
-source tools/en/skeletonic-colors-en.sh
-source tools/en/skeletonic-utilities-en.sh
-
-function setup (){
-	echo
-	echo "${Blue}[INFO]${Reset} Preparing the English documentation..."
-	./tools/en/skeletonic-docs-en.sh
-	echo
-}
-
-setup
+# Start
+cd -- "$(dirname "$0")"
+sh './tools/en/skeletonic-en.sh'
