@@ -45,6 +45,7 @@
 
 source tools/en/skeletonic-colors-en.sh
 source tools/en/skeletonic-variables-en.sh
+source tools/en/skeletonic-utilities-en.sh
 
 # docAll: Run all the commands chronologically.
 function docAll () {
