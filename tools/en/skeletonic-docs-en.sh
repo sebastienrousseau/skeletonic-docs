@@ -86,7 +86,7 @@ function docCleanUp () {
     echo "${Blue}[INFO]${Reset} Directory \"$DIRECTORY\" cleaning has been successfully completed!"
   else 
     echo "${Red}[ERROR]${Reset} The Directory \"$DIRECTORY\" does not exist.\n"
-    exit 1;
+    return;
   fi
 }
 
