@@ -11,11 +11,11 @@
 
 
 # Load configuration files
-source tools/en/skeletonic-colors-en.sh
-source tools/en/skeletonic-utilities-en.sh
+source "tools/en/skeletonic-colors-en.sh"
+source "tools/en/skeletonic-utilities-en.sh"
 
 # Create the setup function
-function setup (){
+setup (){
 	if [ -f ./tools/en/skeletonic-docs-en.sh ]; then
 		./tools/en/skeletonic-docs-en.sh
 	else

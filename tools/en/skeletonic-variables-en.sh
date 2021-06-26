@@ -16,9 +16,10 @@
 #
 
 # Variables
+# shellcheck disable=SC2034  # Unused variables left for readability
 DIRECTORY=site
 TOOLS=tools
-PROGNAME="$(basename $0)"
+PROGNAME="$(basename "$0")"
 REPO=squidfunk
 REQUIREMENTS=requirements.txt
 SKLPATH=tools
