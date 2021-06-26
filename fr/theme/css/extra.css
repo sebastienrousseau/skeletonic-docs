@@ -53,7 +53,7 @@
 }
 
 .button:hover {
-  opacity: .9;
+  opacity: 0.9;
   text-decoration: none;
   transition: all 150ms linear;
 }
@@ -68,7 +68,7 @@ a.button.active,
 .button:active {
   background: var(--cl-grey-1000);
   color: var(--cl-white);
-  opacity: .85;
+  opacity: 0.85;
   text-decoration: none;
   transition: all 150ms linear;
 }
