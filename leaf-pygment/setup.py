@@ -11,4 +11,4 @@ setup(name='leaf',
       [pygments.lexers]
       leaf = leaf.lexer:LeafLexer
       """,
-      )
+)
