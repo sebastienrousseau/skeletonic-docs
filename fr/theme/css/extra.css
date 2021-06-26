@@ -1,7 +1,4 @@
 :root {
-  --cl-primary: #0047dd;
-  --cl-secondary: #0057a8;
-  --cl-tertiary: #777;
   --bg-danger: #ffc0ad;
   --bg-disable: #f1f3f4;
   --bg-info: #f7ffff;
@@ -15,19 +12,22 @@
   --cl-black: #000;
   --cl-danger: #b2081a;
   --cl-disable: #f1f3f4;
+  --cl-grey-1000: #111114;
+  --cl-grey-900: #2b2b2e;
   --cl-info: #008196;
   --cl-inverse: #fff;
   --cl-link: #1b6ec2;
+  --cl-primary: #0047dd;
+  --cl-secondary: #0057a8;
   --cl-success: #2e6430;
+  --cl-tertiary: #777;
   --cl-warning: #993900;
   --cl-white: #fff;
-  --cl-grey-900: #2b2b2e;
-  --cl-grey-1000: #111114;
-  --link-color: #00f;
   --link-color-active: #f00;
   --link-color-focus: #f00;
   --link-color-hover: #f00;
   --link-color-visited: #800080;
+  --link-color: #00f;
 }
 
 :root>[data-md-color-scheme=slate] {
@@ -37,19 +37,19 @@
 }
 
 .button {
-  display: inline-block;
   background: var(--bg-disable);
   color: var(--cl-black);
-  width: auto;
+  display: inline-block;
+  margin-bottom: 0.6rem;
   max-width: 100%;
   min-width: 10rem;
-  margin-bottom: 0.6rem;
   padding: 0.6rem;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   vertical-align: middle;
   white-space: nowrap;
+  width: auto;
 }
 
 .button:hover {
@@ -108,9 +108,9 @@ a.button.link,
   background: 0 0;
   border-color: transparent;
   box-shadow: none;
+  color: var(--link-color);
   min-width: auto;
   text-decoration: none;
-  color: var(--link-color);
 }
 
 a.button.success,
