@@ -8,6 +8,7 @@
 # Skeletonic Stylus Documentation v0.0.1
 # https://docs.skeletonic.io/en
 
+# Load configuration files
 source tools/en/skeletonic-colors-en.sh
 source tools/en/skeletonic-variables-en.sh
 
