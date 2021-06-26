@@ -1,17 +1,11 @@
 # -*- coding: utf-8 -*-
-"""
-    pygments.lexers.leaf
-    ~~~~~~~~~~~~~~~~~~~~
+"""pygments.lexers.leaf"""
 
-    Lexer for Leaf markup.
-"""
-
-import re
-
-from pygments.lexer import RegexLexer, ExtendedRegexLexer, include, bygroups, default, using
+from pygments.lexer import RegexLexer, bygroups
 from pygments.token import Text, Comment, Operator, Keyword, Name, String, Punctuation, Number
 
 __all__ = ['LeafLexer']
+
 
 class LeafLexer(RegexLexer):
     name = 'Leaf'
@@ -26,7 +20,8 @@ class LeafLexer(RegexLexer):
             (r'#\/\/.*', String),
             (r'#\/\*[^\*]*\*\/', String),
             (r'if\(|if\ \(', Keyword, 'expression'),
-            (r'(\#)([^\(]*)(\()', bygroups(Keyword, Keyword, Punctuation), 'expression'),
+            (r'(\#)([^\(]*)(\()', bygroups(Keyword,
+             Keyword, Punctuation), 'expression'),
             (r'\{', Name.Builtin.Pseudo),
             (r'\}', Name.Builtin.Pseudo),
             (r'[^\#\}]+', Comment),
@@ -44,4 +39,3 @@ class LeafLexer(RegexLexer):
             (r'\)', Text, '#pop'),
         ]
     }
-
