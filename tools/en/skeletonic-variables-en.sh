@@ -23,3 +23,4 @@ REQUIREMENTS=requirements.txt
 SKLPATH=tools
 THEME=mkdocs-material
 THEMEFOLDER=material
+VERSION=0.0.1

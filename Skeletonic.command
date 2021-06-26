@@ -1,3 +1,4 @@
+#!/bin/zsh
 #
 #  ____  _        _      _              _        ____
 # / ___|| | _____| | ___| |_ ___  _ __ (_) ___  |  _ \  ___   ___ ___
@@ -48,7 +49,7 @@ function skeletonicDocs () {
 # skeletonicThemes: Start Themes
 function skeletonicThemes () {
   #cd -- "$(dirname "$0")"
-  sh './tools/en/skeletonic-themes.en.sh'
+  sh './tools/en/skeletonic-themes-en.sh'
 }
 
 skeletonicHelp
