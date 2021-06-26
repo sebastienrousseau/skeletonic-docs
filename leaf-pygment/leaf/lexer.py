@@ -2,7 +2,8 @@
 """pygments.lexers.leaf"""
 
 from pygments.lexer import RegexLexer, bygroups
-from pygments.token import Text, Comment, Operator, Keyword, Name, String, Punctuation, Number
+from pygments.token import (Comment, Keyword, Name, Number, Operator,
+                            Punctuation, String, Text)
 
 __all__ = ['LeafLexer']
 
@@ -12,7 +13,8 @@ class LeafLexer(RegexLexer):
     aliases = ['leaf']
     filenames = ['*.leaf']
     mimetypes = ['text/leaf', 'application/leaf']
-    tokens = {
+    tokens = 
+    {
         'root': [
             (r'\n', Comment),
             (r'\s+', Comment),
@@ -20,8 +22,7 @@ class LeafLexer(RegexLexer):
             (r'#\/\/.*', String),
             (r'#\/\*[^\*]*\*\/', String),
             (r'if\(|if\ \(', Keyword, 'expression'),
-            (r'(\#)([^\(]*)(\()', bygroups(Keyword,
-             Keyword, Punctuation), 'expression'),
+            (r'(\#)([^\(]*)(\()', bygroups(Keyword, Keyword, Punctuation), 'expression'),
             (r'\{', Name.Builtin.Pseudo),
             (r'\}', Name.Builtin.Pseudo),
             (r'[^\#\}]+', Comment),
