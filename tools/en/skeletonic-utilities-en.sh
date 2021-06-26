@@ -1,3 +1,4 @@
+#!/bin/zsh
 #
 #  ____  _        _      _              _        ____
 # / ___|| | _____| | ___| |_ ___  _ __ (_) ___  |  _ \  ___   ___ ___
@@ -27,6 +28,6 @@ function error () {
 }
 
 function logs () {
-  script_log="errors-`date +%F`.log"
+  script_log="errors-$(date +%F).log"
   exec 1>>$script_log  
 }
