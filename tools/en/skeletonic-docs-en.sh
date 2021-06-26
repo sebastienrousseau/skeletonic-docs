@@ -146,13 +146,13 @@ function docServe () {
 # docHelp: Present the Help Menu.
 function docHelp() {  
   echo
-  echo "${Green}┌───────────────────────────────────────────┐${Reset}" 
-  echo "${Green}│                                           │${Reset}"
-  echo "${Green}│ ${Green}💀 Skeletonic Stylus Documentation v0.0.1 │${Reset}"
-  echo "${Green}│                                           │${Reset}"
-  echo "${Green}└───────────────────────────────────────────┘${Reset}"
+  echo "${Blue}┌ ${White}Skeletonic Stylus${Reset} ${Blue}───────────────┐${Reset}" 
+  echo "${Blue}│                                  │${Reset}" 
+  echo "${Blue}│ ${White}Online Documentation generator ${Reset}  ${Blue}│${Reset}" 
+  echo "${Blue}│                                  │${Reset}" 
+  echo "${Blue}└──────────────────────────────────┘${Reset}" 
   echo
-  echo "${Blue}[INFO]${Reset} ${Yellow}Available options:${Reset}"
+  echo "${Blue}[INFO]${Reset} ${White}Available options:${Reset}"
   echo "
   ${Green}[0]${Reset} Exit menu.
   ${Green}[1]${Reset} Run all the commands chronologically.

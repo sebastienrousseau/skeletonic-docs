@@ -15,14 +15,11 @@ source tools/en/skeletonic-utilities-en.sh
 
 # Create the setup function
 function setup (){
-	echo
-	echo "${Blue}[INFO]${Reset} Preparing the English documentation..."
 	if [ -f ./tools/en/skeletonic-docs-en.sh ]; then
 		./tools/en/skeletonic-docs-en.sh
 	else
   	error "$LINENO: File \"${0}\" not found. Check the file name and try again. "
-  fi	
-	echo
+  fi
 }
 
 # Call the setup function

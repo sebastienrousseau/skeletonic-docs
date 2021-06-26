@@ -117,14 +117,12 @@ function themeRemove () {
 # themeHelp: Present the Help Menu.
 function themeHelp() {  
   echo
-  echo "${Blue}┌ Skeletonic Stylus ──────────────┐${Reset}" 
-  echo "${Blue}│                                 │${Reset}" 
-  echo "${Blue}│ Highly customized mkdocs themes │${Reset}" 
-  echo "${Blue}│                                 │${Reset}" 
-  echo "${Blue}└─────────────────────────────────┘${Reset}" 
-  echo
-  echo "${Blue}[INFO]${Reset} ${Yellow}Available options:${Reset}"
-  echo "
+  echo "${Blue}┌ ${White}Skeletonic Stylus${Reset} ${Blue}───────────────┐${Reset}" 
+  echo "${Blue}│                                  │${Reset}" 
+  echo "${Blue}│ ${White}Highly customized mkdocs themes${Reset}  ${Blue}│${Reset}" 
+  echo "${Blue}│                                  │${Reset}" 
+  echo "${Blue}└──────────────────────────────────┘${Reset}" 
+  echo " 
   ${Green}[0]${Reset} Exit menu.
   ${Green}[1]${Reset} Run all the commands chronologically.
   ${Green}[2]${Reset} Install the required libraries and dependencies.
