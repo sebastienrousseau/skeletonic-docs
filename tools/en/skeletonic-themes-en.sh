@@ -56,14 +56,14 @@ function themeAll () {
 
 # themeRequirements: Install required libraries and dependencies.
 function themeRequirements () {
-  echo "${Blue}[INFO]${Reset} Installing requirements files"
+  printf "${Blue}[INFO]${Reset} Installing requirements files"
   pip install -r $TOOLS/$REQUIREMENTS ;
 }
 
 # themeVersion: Show the version of the theme installed locally.
 function themeVersion () {
   echo
-  echo "Current version of \"$THEME\" installed:"
+  printf "Current version of \"$THEME\" installed:"
   echo
   pip freeze | grep mkdocs-material ;
   echo
@@ -75,7 +75,7 @@ function themeCleanUp () {
   echo "${Yellow}[WARNING]${Reset} Clean up the existing theme folder."
   if [ -d $THEMEFOLDER ]; then
     rm -rf $THEMEFOLDER;
-    echo "${Blue}[INFO]${Reset} Directory \"$THEMEFOLDER\" cleaning has been successfully completed!"
+    printf "${Blue}[INFO]${Reset} Directory \"$THEMEFOLDER\" cleaning has been successfully completed!"
   else 
     error "$LINENO: The Directory \"$THEMEFOLDER\" does not exist."
     exit 1;
@@ -87,17 +87,17 @@ function themeSource () {
   echo
   echo "${Yellow}[WARNING]${Reset} Downloading \"$THEME\" locally for development. "
   if [[ ! -d "$THEME/" ]];then    
-    echo "${Blue}[INFO]${Reset} Creating the \"$THEME\" directory..." ;
+    printf "${Blue}[INFO]${Reset} Creating the \"$THEME\" directory..." ;
     mkdir -p $THEME;
     cd $THEME;
-    echo "${Blue}[INFO]${Reset} Downloading the \"$THEME\"..." ;
+    printf "${Blue}[INFO]${Reset} Downloading the \"$THEME\"..." ;
     wget -q --no-check-certificate --content-disposition https://api.github.com/repos/$REPO/$THEME/tarball  -O $THEME.tar.gz;
     (        
         tar xzf $THEME.tar.gz --strip-components=1 ;
     )
-    echo "${Blue}[INFO]${Reset} Finished downloading and installing \"$THEME\"" ;
+    printf "${Blue}[INFO]${Reset} Finished downloading and installing \"$THEME\"" ;
     else 
-      echo "${Red}[ERROR]${Reset} The Directory \"$DIRECTORY\" does not exist.\n"
+      printf "${Red}[ERROR]${Reset} The Directory \"$DIRECTORY\" does not exist.\n"
       exit 1;
     fi
     exit 0;
@@ -105,13 +105,13 @@ function themeSource () {
 
 # themeExtract: Extract the main theme folder for development. 
 function themeExtract () {
-    echo "${Blue}[INFO]${Reset} Extracting \"$THEME\"..." ;
+    printf "${Blue}[INFO]${Reset} Extracting \"$THEME\"..." ;
     cp -fr $THEME/$THEMEFOLDER ./ ;
 }
 
 # themeRemove: Remove the source theme folder. 
 function themeRemove () {
-    echo "${Blue}[INFO]${Reset} Removing \"$THEME\"..." ;
+    printf "${Blue}[INFO]${Reset} Removing \"$THEME\"..." ;
     rm -fr $THEME ;
 }
 
