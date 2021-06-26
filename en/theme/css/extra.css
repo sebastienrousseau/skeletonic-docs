@@ -30,10 +30,10 @@
   --link-color: #00f;
 }
 
-:root>[data-md-color-scheme=slate] {
+:root > [data-md-color-scheme=slate] {
   --md-default-bg-color: var(--cl-grey-1000);
   --md-default-fg-color--light: #728096;
-  --md-typeset-a-color: #FF6349;
+  --md-typeset-a-color: #ff6349;
 }
 
 .button {
