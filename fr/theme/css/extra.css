@@ -27,18 +27,20 @@
   --link-color-active: #f00;
   --link-color-focus: #f00;
   --link-color-hover: #f00;
-  --link-color-visited: #800080; 
+  --link-color-visited: #800080;
 }
+
 :root>[data-md-color-scheme=slate] {
-  --md-default-bg-color:var(--cl-grey-1000);
-  --md-default-fg-color--light:#728096;
-  --md-typeset-a-color:#FF6349;
+  --md-default-bg-color: var(--cl-grey-1000);
+  --md-default-fg-color--light: #728096;
+  --md-typeset-a-color: #FF6349;
 }
+
 .button {
   display: inline-block;
   background: var(--bg-disable);
   color: var(--cl-black);
-  width:auto;
+  width: auto;
   max-width: 100%;
   min-width: 10rem;
   margin-bottom: 0.6rem;
@@ -56,12 +58,14 @@
   transition: all 150ms linear;
 }
 
-a.button.default, .default {
+a.button.default,
+.default {
   background: var(--bg-disable);
   color: var(--cl-black);
 }
 
-a.button.active, .button:active {
+a.button.active,
+.button:active {
   background: var(--cl-grey-1000);
   color: var(--cl-white);
   opacity: .85;
@@ -69,32 +73,38 @@ a.button.active, .button:active {
   transition: all 150ms linear;
 }
 
-a.button.primary, .primary {
+a.button.primary,
+.primary {
   background: var(--cl-primary);
-  color: var(--cl-white);  
+  color: var(--cl-white);
 }
 
-a.button.secondary, .secondary {
+a.button.secondary,
+.secondary {
   background: var(--cl-secondary);
-  color: var(--cl-white);  
+  color: var(--cl-white);
 }
 
-a.button.tertiary, .tertiary {
+a.button.tertiary,
+.tertiary {
   background: var(--cl-tertiary);
-  color: var(--cl-white);  
+  color: var(--cl-white);
 }
 
-a.button.danger, .danger {
+a.button.danger,
+.danger {
   background: var(--cl-danger);
-  color: var(--cl-white);  
+  color: var(--cl-white);
 }
 
-a.button.info, .info {
+a.button.info,
+.info {
   background: var(--cl-info);
-  color: var(--cl-white);  
+  color: var(--cl-white);
 }
 
-a.button.link, .link {
+a.button.link,
+.link {
   background: 0 0;
   border-color: transparent;
   box-shadow: none;
@@ -103,23 +113,27 @@ a.button.link, .link {
   color: var(--link-color);
 }
 
-a.button.success, .success {
+a.button.success,
+.success {
   background: var(--cl-success);
-  color: var(--cl-white);  
+  color: var(--cl-white);
 }
 
-a.button.warning, .warning {
+a.button.warning,
+.warning {
   background: var(--cl-warning);
-  color: var(--cl-white);  
+  color: var(--cl-white);
 }
 
-a.button.primary-outline, .primary-outline {
-  background-color: var(--cl-white); 
+a.button.primary-outline,
+.primary-outline {
+  background-color: var(--cl-white);
   border: 1px solid var(--cl-primary);
-  color: var(--cl-primary);  
+  color: var(--cl-primary);
 }
 
-a.button.primary-outline:hover, .primary-outline:hover {
+a.button.primary-outline:hover,
+.primary-outline:hover {
   background-color: var(--cl-primary);
   color: var(--cl-white);
   opacity: 1;
@@ -127,13 +141,15 @@ a.button.primary-outline:hover, .primary-outline:hover {
   transition: all 150ms linear;
 }
 
-a.button.secondary-outline, .secondary-outline {
-  background-color: var(--cl-white); 
+a.button.secondary-outline,
+.secondary-outline {
+  background-color: var(--cl-white);
   border: 1px solid var(--cl-secondary);
-  color: var(--cl-secondary);  
+  color: var(--cl-secondary);
 }
 
-a.button.secondary-outline:hover, .secondary-outline:hover {
+a.button.secondary-outline:hover,
+.secondary-outline:hover {
   background-color: var(--cl-secondary);
   color: var(--cl-white);
   opacity: 1;
@@ -141,13 +157,15 @@ a.button.secondary-outline:hover, .secondary-outline:hover {
   transition: all 150ms linear;
 }
 
-a.button.tertiary-outline, .tertiary-outline {
-  background-color: var(--cl-white); 
+a.button.tertiary-outline,
+.tertiary-outline {
+  background-color: var(--cl-white);
   border: 1px solid var(--cl-tertiary);
-  color: var(--cl-tertiary);  
+  color: var(--cl-tertiary);
 }
 
-a.button.tertiary-outline:hover, .tertiary-outline:hover {
+a.button.tertiary-outline:hover,
+.tertiary-outline:hover {
   background-color: var(--cl-tertiary);
   color: var(--cl-white);
   opacity: 1;
@@ -155,13 +173,15 @@ a.button.tertiary-outline:hover, .tertiary-outline:hover {
   transition: all 150ms linear;
 }
 
-a.button.success-outline, .success-outline {
-  background-color: var(--cl-white); 
+a.button.success-outline,
+.success-outline {
+  background-color: var(--cl-white);
   border: 1px solid var(--cl-success);
-  color: var(--cl-success);  
+  color: var(--cl-success);
 }
 
-a.button.success-outline:hover, .success-outline:hover {
+a.button.success-outline:hover,
+.success-outline:hover {
   background-color: var(--cl-success);
   color: var(--cl-white);
   opacity: 1;
@@ -169,13 +189,15 @@ a.button.success-outline:hover, .success-outline:hover {
   transition: all 150ms linear;
 }
 
-a.button.info-outline, .info-outline {
-  background-color: var(--cl-white); 
+a.button.info-outline,
+.info-outline {
+  background-color: var(--cl-white);
   border: 1px solid var(--cl-info);
-  color: var(--cl-info);  
+  color: var(--cl-info);
 }
 
-a.button.info-outline:hover, .info-outline:hover {
+a.button.info-outline:hover,
+.info-outline:hover {
   background-color: var(--cl-info);
   color: var(--cl-white);
   opacity: 1;
@@ -183,13 +205,15 @@ a.button.info-outline:hover, .info-outline:hover {
   transition: all 150ms linear;
 }
 
-a.button.warning-outline, .warning-outline {
-  background-color: var(--cl-white); 
+a.button.warning-outline,
+.warning-outline {
+  background-color: var(--cl-white);
   border: 1px solid var(--cl-warning);
-  color: var(--cl-warning);  
+  color: var(--cl-warning);
 }
 
-a.button.warning-outline:hover, .warning-outline:hover {
+a.button.warning-outline:hover,
+.warning-outline:hover {
   background-color: var(--cl-warning);
   color: var(--cl-white);
   opacity: 1;
@@ -197,13 +221,15 @@ a.button.warning-outline:hover, .warning-outline:hover {
   transition: all 150ms linear;
 }
 
-a.button.danger-outline, .danger-outline {
-  background-color: var(--cl-white); 
+a.button.danger-outline,
+.danger-outline {
+  background-color: var(--cl-white);
   border: 1px solid var(--cl-danger);
-  color: var(--cl-danger);  
+  color: var(--cl-danger);
 }
 
-a.button.danger-outline:hover, .danger-outline:hover {
+a.button.danger-outline:hover,
+.danger-outline:hover {
   background-color: var(--cl-danger);
   color: var(--cl-white);
   opacity: 1;
