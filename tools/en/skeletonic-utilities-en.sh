@@ -10,24 +10,23 @@
 # https://docs.skeletonic.io/en
 
 # Load configuration files
-source tools/en/skeletonic-colors-en.sh
-source tools/en/skeletonic-variables-en.sh
+source "tools/en/skeletonic-colors-en.sh"
+source "tools/en/skeletonic-variables-en.sh"
 
-function pid () {
+pid () {
   eval "${1}=$(sh -c 'echo ${PPID}')"
 }
 
-function error () {
-  local pid 
-  local code="${3:-1}"
-  pid pid
+error () {
+  _error_pid 
+  _error_pid pid
   echo "❌ [${Red}ERROR${Reset}:${Blue}${pid}${Reset}] ${Green}$(date +%F)${Reset}: ${Blue}${PROGNAME}${Reset}: ${Blue}${1}${Reset}: Exited with status ${code}.${Reset}"
   logs
-  echo [ERROR:${pid}] $(date +%F): ${PROGNAME}: ${1}: Exited with status ${code}.
+  echo [ERROR:"${pid}"] "$(date +%F)": "${PROGNAME}": "${1}": Exited with status "${code}".
   exit "${code}"
 }
 
-function logs () {
+logs () {
   script_log="errors-$(date +%F).log"
-  exec 1>>$script_log  
+  exec 1>>"$script_log"
 }

@@ -32,7 +32,7 @@ set -o errexit -o nounset
 
 echo "Preparing to build and deploy documentation"
 
-if [[ -z ${GH_USER_NAME} || -z ${GH_USER_EMAIL} || -z ${GH_TOKEN} || -z ${GH_REF} ]]; then
+if [ -z "${"GH_USER_NAME"}" || -z "${"GH_USER_EMAIL"}" || -z "${"GH_TOKEN"}" || -z "${"GH_REF"}" ]; then
     echo "Missing environment variables. Aborting"
     exit 1
 fi;
@@ -55,7 +55,7 @@ mkdir -p docs/html
 )
 
 # Build the documentation
-${SCRIPT_PATH}/build.sh
+"${SCRIPT_PATH}"/build.sh
 
 # Commit and push the documentation to gh-pages
 (
