@@ -13,8 +13,7 @@ class LeafLexer(RegexLexer):
     aliases = ['leaf']
     filenames = ['*.leaf']
     mimetypes = ['text/leaf', 'application/leaf']
-    tokens = 
-    {
+    tokens = {
         'root': [
             (r'\n', Comment),
             (r'\s+', Comment),
