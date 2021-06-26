@@ -148,7 +148,7 @@ function docHelp() {
   echo
   echo "${Blue}┌ ${White}Skeletonic Stylus${Reset} ${Blue}───────────────┐${Reset}" 
   echo "${Blue}│                                  │${Reset}" 
-  echo "${Blue}│ ${White}Online Documentation generator ${Reset}  ${Blue}│${Reset}" 
+  echo "${Blue}│ ${White}Online documentation generator ${Reset}  ${Blue}│${Reset}" 
   echo "${Blue}│                                  │${Reset}" 
   echo "${Blue}└──────────────────────────────────┘${Reset}" 
   echo

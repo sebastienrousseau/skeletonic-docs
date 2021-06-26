@@ -1,4 +1,3 @@
-#!/bin/zsh
 #
 #  ____  _        _      _              _        ____
 # / ___|| | _____| | ___| |_ ___  _ __ (_) ___  |  _ \  ___   ___ ___
@@ -43,7 +42,7 @@ function skeletonicHelp() {
 # skeletonicDocs: Start Documentation
 function skeletonicDocs () {
   cd -- "$(dirname "$0")"
-  sh './tools/en/skeletonic-en.sh'
+  sh './tools/en/skeletonic-setup-en.sh'
 }
 
 # skeletonicThemes: Start Themes
