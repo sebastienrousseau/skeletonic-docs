@@ -13,43 +13,44 @@
 #
 # This build script has the following functions:
 #
-#   function docAll ():
+#   docAll ():
 #     - Run all the commands chronologically.
 #
-#   function docRequirements ():
+#   docRequirements ():
 #     - Install required libraries and dependencies 
 #
-#   function docVersion ():
+#   docVersion ():
 #     - Show the version of mkdocs installed locally.
 #
-#   function docCleanUp ():
+#   docCleanUp ():
 #     - Clean up the existing website folder.
 #
-#   function docBuild ():
+#   docBuild ():
 #     - Build any localized documentation. (default english and french)
 #
-#   function docLeafPygment (): 
+#   docLeafPygment (): 
 #     - Provides Leaf syntax highlighting for Pygment.
 #
-#   function docSite ():
+#   docSite ():
 #     - Prepare website folder
 #
-#   function docServe ():
+#   docServe ():
 #     - Preview the site using a local HTTP server.
 #
-#   function docHelp ():
+#   docHelp ():
 #     - Present the Help Menu.
 #
 # Copyright (c) Sebastien Rousseau 2021. All rights reserved
 # Licensed under the MIT license
 #
 
-source tools/en/skeletonic-colors-en.sh
-source tools/en/skeletonic-variables-en.sh
-source tools/en/skeletonic-utilities-en.sh
+# Load configuration files
+source "tools/en/skeletonic-colors-en.sh"
+source "tools/en/skeletonic-variables-en.sh"
+source "tools/en/skeletonic-utilities-en.sh"
 
 # docAll: Run all the commands chronologically.
-function docAll () {
+docAll () {
   echo "${Yellow}[WARNING]${Reset} External libraries and dependencies installation."    
 	docRequirements
   docVersion
@@ -61,15 +62,15 @@ function docAll () {
 }
 
 # docRequirements: Install required libraries and dependencies
-function docRequirements () {
+docRequirements () {
   echo
   echo "${Blue}[INFO]${Reset} Installing requirements files"
-  pip install -r $SKLPATH/requirements.txt ;
+  pip install -r "$SKLPATH/requirements.txt" ;
   echo
 }
 
 # docVersion: Show the version of mkdocs installed locally.
-function docVersion () {
+docVersion () {
   echo
 	echo "Current version of mkdocs available is:"
   echo
@@ -78,35 +79,35 @@ function docVersion () {
 }
 
 # docCleanUp: Clean up the existing website folder.
-function docCleanUp () {
+docCleanUp () {
   echo
   echo "${Yellow}[WARNING]${Reset} Clean up the existing website folder."
-  if [ -d $DIRECTORY ]; then
-    rm -rf $DIRECTORY;
-    mkdir -p $DIRECTORY;
-    echo "${Blue}[INFO]${Reset} Directory \"$DIRECTORY\" cleaning has been successfully completed!"
+  if [ -d "$DIRECTORY" ]; then
+    rm -rf "$DIRECTORY";
+    mkdir -p "$DIRECTORY";
+    echo "${Blue}[INFO]${Reset} Directory $DIRECTORY cleaning has been successfully completed!"
   else 
-    echo "${Red}[ERROR]${Reset} The Directory \"$DIRECTORY\" does not exist.\n"
+    echo "${Red}[ERROR]${Reset} The Directory $DIRECTORY does not exist."
     return;
   fi
 }
 
 # docBuild: Build any localized documentation. (default english and french)
-function docBuild () {
+docBuild () {
   echo
   echo "${Blue}[INFO]${Reset} Installing the English documentation"
-  cd en;
+  cd en || exit;
   mkdocs build;
   cd ..;
   echo
   echo "${Blue}[INFO]${Reset} Installing the French documentation"
-  cd fr;
+  cd fr || exit;
   mkdocs build;
   cd ..;
 }
 
 # docLeafPygment: Compile leaf-pygment locally (Leaf syntax highlighting for Pygment).
-function docLeafPygment () {
+docLeafPygment () {
   echo
   echo "${Blue}[INFO]${Reset} Installing leaf-pygment locally"
   #cd leaf-pygment && ./compile.sh
@@ -115,7 +116,7 @@ function docLeafPygment () {
 }
 
 # docSite: Prepare website folder
-function docSite () {
+docSite () {
   echo
   echo "${Blue}[INFO]${Reset} Prepare the English website"
   mv en/site site/en;
@@ -128,13 +129,13 @@ function docSite () {
 }
 
 # docServe: Preview the site using a local HTTP server.
-function docServe () {
+docServe () {
   
   if [ -z "$(command -v serve)" ]; then
     echo "${Red}[ERROR]${Reset} You are missing the package 'serve'.";
     echo "${Blue}[INFO]${Reset} Simply install the package using the Yarn Package Manager";
     echo "yarn global add serve" | pbcopy;
-    echo "$(pbpaste)"
+    pbpaste; echo
     exit 1;
   fi
   
@@ -145,7 +146,7 @@ function docServe () {
 }
 
 # docHelp: Present the Help Menu.
-function docHelp() {  
+docHelp() {  
   echo
   echo "${Blue}┌ ${White}Skeletonic Stylus${Reset} ${Blue}───────────────┐${Reset}" 
   echo "${Blue}│                                  │${Reset}" 
