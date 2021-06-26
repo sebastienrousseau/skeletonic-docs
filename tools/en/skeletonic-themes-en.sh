@@ -135,7 +135,7 @@ function themeHelp() {
   ${Green}[8]${Reset} Help menu."
   echo
   echo "${Blue}[INFO]${Reset} ${Yellow}Choose an option and press [ENTER]:${Reset}"
-  read a
+  read -r a
     case $a in
       0) exit 0 ;;
       1) themeAll ; themeHelp ;;
