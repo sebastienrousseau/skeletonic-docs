@@ -20,7 +20,7 @@ Text buttons are typically used for less important actions, including those loca
 Outlined buttons are used for more emphasis than text buttons due to the stroke. They contain actions that are important, but aren’t the primary action in an app.
 
 === "Preview"
-    [Link](https://skeletonic.io){ .button .link }
+    [Link](https://skeletonic.io){ .button .primary-outline }
 
 === "Markup"
     ```sh
@@ -33,7 +33,7 @@ Outlined buttons are used for more emphasis than text buttons due to the stroke.
 Contained buttons have more emphasis, as they use a color fill and shadow. They contain actions that are primary to your app.
 
 === "Preview"
-    [Link](https://skeletonic.io){ .button .link }
+    [Link](https://skeletonic.io){ .button .primary }
 
 === "Markup"
     ```sh
