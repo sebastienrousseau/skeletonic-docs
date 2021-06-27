@@ -16,6 +16,7 @@
 #
 
 # List of colors
+# shellcheck disable=SC2034  # Unused variables left for readability
 Black='\033[0;90m'   # Black
 Blue='\033[0;94m'    # Blue
 Cyan='\033[0;96m'    # Cyan
