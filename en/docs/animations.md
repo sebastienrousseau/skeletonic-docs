@@ -1,4 +1,3 @@
-<!-- Animations -->
 # Animations
 
 Skeletonic CSS library provides ready-to-use, cross-browser transitions, transformations, and animations utilities.
@@ -28,5 +27,3 @@ Here's the list of all the CSS Animations and Transitions:
 | [vanish](animations/vanish.md)         | Make an element to gradually disappear. |
 | [wobble](animations/wobble.md)         | Make an element to move unsteadily from side to side. |
 | [zoom](animations/zoom.md)             |Make an element to zoom into or out view |
-
-<!-- End Animations -->
