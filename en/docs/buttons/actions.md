@@ -1,5 +1,9 @@
 # Button actions
 
+![Banner representing the Skeletonic Stylus Library](../assets/skeletonic-stylus-header.svg)
+
+## Overview
+
 ## Contained buttons
 
 ### Call-to-action (CTA)

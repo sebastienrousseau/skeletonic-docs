@@ -1,5 +1,9 @@
 # Button Groups
 
+![Banner representing the Skeletonic Stylus Library](../assets/skeletonic-stylus-header.svg)
+
+## Overview
+
 Skeletonic CSS allows you to group multiple buttons together on a single line. Use an element of your choice with class *.button-group* to create a button group:
 
 === "Preview"
