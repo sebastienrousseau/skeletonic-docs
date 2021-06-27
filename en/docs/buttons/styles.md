@@ -1,6 +1,6 @@
 # Button Styles
 
-![Banner representing the Skeletonic Stylus Library](../assets/skeletonic-stylus-header.svg)
+![Banner representing the Skeletonic Stylus Buttons](../assets/skeletonic-stylus-buttons.svg)
 
 ## Overview
 
