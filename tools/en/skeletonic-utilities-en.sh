@@ -10,6 +10,7 @@
 # https://docs.skeletonic.io/en
 
 # Load configuration files
+# shellcheck disable=SC2002 # Don't warn about UUOC
 # shellcheck disable=SC3000-SC4000
 # shellcheck disable=SC1091
 source "tools/en/skeletonic-colors-en.sh"
