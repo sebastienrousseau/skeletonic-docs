@@ -32,7 +32,7 @@ set -o errexit -o nounset
 
 echo "Preparing to build and deploy documentation"
 
-if [ -z "${"GH_USER_NAME"}" || -z "${"GH_USER_EMAIL"}" || -z "${"GH_TOKEN"}" || -z "${"GH_REF"}" ]; then
+if [ -z "${"GH_USER_NAME"}" ] || [ -z "${"GH_USER_EMAIL"}" ] || [ -z "${"GH_TOKEN"}" ] || [ -z "${"GH_REF"}" ]; then
     echo "Missing environment variables. Aborting"
     exit 1
 fi;
