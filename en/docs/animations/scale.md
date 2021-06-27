@@ -1,7 +1,7 @@
-# Blink
+# Scale
 
 ![Banner representing the Skeletonic Stylus Library](../assets/skeletonic-stylus-header.svg)
 
 ## Overview
 
-The Blink animation allows you to apply a blinking effect to an element.
+The Scale animation allows you to apply a scale-in effect to an element.

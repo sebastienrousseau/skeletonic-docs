@@ -1,8 +1,10 @@
 # Fade
 
-The Fade animation allows you to apply a continuous fade-in or fade-out effect to an element.
-
 ![Banner representing the Skeletonic Stylus Library](../assets/skeletonic-stylus-header.svg)
+
+## Overview
+
+The Fade animation allows you to apply a continuous fade-in or fade-out effect to an element.
 
 ## Fade in
 

@@ -1,0 +1,158 @@
+# Project information
+site_name: Skeletonic Docs
+site_url: https://docs.skeletonic.io/en/
+site_author: Sebastien Rousseau
+site_description: The Skeletonic Stylus Library Documentation.
+
+# Repository
+repo_name: skeletonic-docs
+repo_url: https://github.com/sebastienrousseau/skeletonic-docs
+#edit_uri: https://github.com/sebastienrousseau/skeletonic-docs/documentation/edit/main/1.0/docs/
+
+# Copyright
+copyright: "Copyright &copy; Sebastien Rousseau 2021. All rights reserved."
+
+# Configuration
+docs_dir: docs/
+site_dir: site/
+
+theme:
+  name: 'material'
+  
+# 404 page
+  static_templates:
+    - 404.html
+
+# Font
+  font:
+    text: 'Open Sans'
+    code: 'Roboto Mono'
+  
+  custom_dir: theme/
+
+# Language for theme localization
+  language: en
+
+  palette:
+  - scheme: default
+    primary: black
+    accent: blue
+    toggle:
+      icon: material/toggle-switch-off-outline
+      name: Switch to dark mode
+  - scheme: slate
+    primary: black
+    accent: blue
+    toggle:
+      icon: material/toggle-switch
+      name: Switch to light mode
+    
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+
+# Customization 
+extra_css:
+  - css/extra.css
+
+extra:
+  alternate:
+    - name: English
+      link: /en/
+      lang: en
+    - name: Français
+      link: /fr/
+      lang: fr
+  search:
+    language: 'en'
+
+  # Social
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/sebastienrousseau/skeletonic-docs
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - meta
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - smarty
+  - codehilite:
+      guess_lang: false
+      css_class: 'code'
+  - toc:
+      permalink: true
+
+plugins:
+  - search:
+      lang: en
+  - i18n:
+      default_language: en
+      languages:
+        en: english
+        fr: français
+  - minify:
+      minify_html: true
+      minify_js: true
+      htmlmin_opts:
+          remove_comments: true
+      
+nav:
+- Welcome: "index.md"
+- Install:
+  - CDN: "install/cdn.md"
+  - GitHub: "install/github.md"
+  - NPM: "install/npm.md"
+  - YARN: "install/yarn.md"
+- Getting Started:
+  - Hello Skeletonic: "hello-skeletonic.md"
+  - Folder Structure: "folder-structure.md"
+- Animations: 
+  - Overview: "animations.md"
+  - Blink: "animations/blink.md"
+  - Bounce: "animations/bounce.md"
+  - Chameleon: "animations/chameleon.md"
+  - Fade: "animations/fade.md"
+  - Pop: "animations/pop.md"
+  - Pulsate: "animations/pulsate.md"
+  - Scale: "animations/scale.md"
+  - Shake: "animations/shake.md"
+  - Spin: "animations/spin.md"
+  - Vanish: "animations/vanish.md"
+  - Wobble: "animations/wobble.md"
+  - Zoom: "animations/zoom.md"
+- Buttons:
+  - Overview: "buttons.md"  
+  - Actions: "buttons/actions.md"
+  - Groups: "buttons/groups.md"
+  - States: "buttons/states.md"
+  - Styles: "buttons/styles.md"
+  - Types: "buttons/types.md"
+- Cards:
+  - Overview: "cards.md"  
+  - Adaptive: "cards/adaptive.md"
+  - Colors: "cards/colors.md"    
+  - Hero: "cards/hero.md"
+  - List: "cards/list.md"
+  - Syntax: "cards/syntax.md"
+  - Thumbnail: "cards/thumbnail.md"
+  - Types: "cards/types.md"  
+- Code:
+  - Overview: "code.md"    
+- Deploy:
+  - DigitalOcean: "deploy/digital-ocean.md"
+  - Heroku: "deploy/heroku.md"
+  - Supervisor: "deploy/supervisor.md"
+  - Nginx: "deploy/nginx.md"
+  - Docker: "deploy/docker.md"
+- Versions:
+    - v1.0: "version/1_0.md"
+    - Upgrading: "upgrading.md"

@@ -1,6 +1,8 @@
+# Pop
+
 ![Banner representing the Skeletonic Stylus Library](../assets/skeletonic-stylus-header.svg)
 
-# Pop
+## Overview
 
 The Pop animation allows you to apply a pop-in effect to an element.
 
