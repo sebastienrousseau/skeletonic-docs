@@ -24,7 +24,7 @@ Outlined buttons are used for more emphasis than text buttons due to the stroke.
 
 === "Markup"
     ```sh
-    <button type="button" class="primary-outline">Link</button>
+    <button type="button" class="primary-outline">Outlined</button>
     ```
 
 
@@ -37,7 +37,5 @@ Contained buttons have more emphasis, as they use a color fill and shadow. They 
 
 === "Markup"
     ```sh
-    <button type="button" class="primary">Link</button>
+    <button type="button" class="primary">Contained</button>
     ```
-
-
