@@ -4,7 +4,7 @@
 
 ## Overview
 
-The Pop animation allows you to apply a pop-in effect to an element.
+The Pop animations allows you to cover all or a part of a website by applying a pop-in effect to an element.
 
 ## Pop In
 
