@@ -10,11 +10,14 @@
 # https://docs.skeletonic.io/en
 
 # Load configuration files
-source tools/en/skeletonic-colors-en.sh
-source tools/en/skeletonic-utilities-en.sh
+# shellcheck disable=SC2002 # Don't warn about UUOC
+# shellcheck disable=SC3000-SC4000
+# shellcheck disable=SC1091
+source "tools/en/skeletonic-colors-en.sh"
+source "tools/en/skeletonic-utilities-en.sh"
 
 # skeletonicHelp: Present the Help Menu.
-function skeletonicHelp() {  
+skeletonicHelp() {
 
   echo "${Green}┌───────────────────────────────────────────────────────────────────┐${Reset}" 
   echo "${Green}│                                                                   ${Green}│${Reset}"
@@ -41,14 +44,14 @@ function skeletonicHelp() {
 }
 
 # skeletonicDocs: Start Documentation
-function skeletonicDocs () {
-  cd -- "$(dirname "$0")"
+skeletonicDocs () {
+  cd -- "$(dirname "$0")" || exit
   sh './tools/en/skeletonic-setup-en.sh'
 }
 
 # skeletonicThemes: Start Themes
-function skeletonicThemes () {
-  #cd -- "$(dirname "$0")"
+skeletonicThemes () {
+  #cd -- "$(dirname "$0")" || exit
   sh './tools/en/skeletonic-themes-en.sh'
 }
 
