@@ -10,7 +10,7 @@ Buttons are used to initialize action, either to go on another page (i.e. call t
 
 Text buttons are typically used for less important actions, including those located in dialogs and cards. In cards, text buttons help maintain an emphasis on card content.
 
-![Outlined buttons anatomy](../assets/buttons/button-text.svg)
+![A text variation of the primary button state.](../assets/buttons/button-text.svg)
 
 
 === "Preview"
@@ -24,7 +24,7 @@ Text buttons are typically used for less important actions, including those loca
 
 ## Outlined Button (medium emphasis)
 
-![Outlined buttons anatomy](../assets/buttons/button-outlined.svg)
+![An outlined variation of the primary button state.](../assets/buttons/button-outlined.svg)
 
 Outlined buttons are used for more emphasis than text buttons due to the stroke. They contain actions that are important, but aren’t the primary action in an app.
 
@@ -40,7 +40,7 @@ Outlined buttons are used for more emphasis than text buttons due to the stroke.
 
 Contained buttons have more emphasis, as they use a color fill and shadow. They contain actions that are primary to your app.
 
-![Contained buttons anatomy](../assets/buttons/button-contained.svg)
+![A contained variation of the primary button state.](../assets/buttons/button-contained.svg)
 
 
 === "Preview"
