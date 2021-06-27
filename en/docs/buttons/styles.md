@@ -10,14 +10,14 @@ Buttons have multiple styles for colouring that can be set in the css property:
 
 | Class           | Description                                     |
 | --------------- | ----------------------------------------------- |
-| [.default](#default-button-style)      | Default button style. |
-| [.primary](#primary-button-style)      | Indicates the primary action. |
-| [.secondary](#secondary-button-style)  | Indicates the secondary action. |
-| [.danger](#danger-button-style)        | Indicates a dangerous or negative action. |
-| [.info](#info-button-style)            | Make an element to flash. |
-| [.link](#link-button-style)            | Makes a &lt;button&gt; look like an &lt;a&gt; element. |
-| [.success](#success-button-style)      | Make an element to pulsate. |
-| [.warning](#warning-button-style)      | Make an element to spin in place.  |
+| [.default](#default)      | Default button style. |
+| [.primary](#primary)      | Indicates the primary action. |
+| [.secondary](#secondary)  | Indicates the secondary action. |
+| [.danger](#danger)        | Indicates a dangerous or negative action. |
+| [.info](#info)            | Make an element to flash. |
+| [.link](#link)            | Makes a &lt;button&gt; look like an &lt;a&gt; element. |
+| [.success](#success)      | Make an element to pulsate. |
+| [.warning](#warning)      | Make an element to spin in place.  |
 
 ## Build-in styles
 
