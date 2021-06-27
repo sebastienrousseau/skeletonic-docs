@@ -65,6 +65,11 @@ extra:
   search:
     language: 'en'
 
+  features:
+    - content.tabs.link
+    - navigation.sections
+    - navigation.tabs
+
   # Social
   social:
     - icon: fontawesome/brands/github
