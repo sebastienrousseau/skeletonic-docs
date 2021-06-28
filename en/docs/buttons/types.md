@@ -22,7 +22,6 @@ Text buttons are typically used for less important actions, including those loca
     <button type="button" class="link">Link</button>
     ```
 
-
 ## Outlined Button (Medium emphasis)
 
 ![An outlined variation of the primary button state.](../assets/buttons/button-outlined.svg)
