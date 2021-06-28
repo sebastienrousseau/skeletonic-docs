@@ -1,0 +1,149 @@
+# Project information
+site_name: Les Docs Skeletonic
+# site_url: http://localhost:8000/fr/
+site_author: Sebastien Rousseau
+site_description: La bibliothèque Stylus Skeletonic est une bibliothèque légère, intuitive, accessible et ultra réactive écrite avec un pré-processeur de feuilles de style en cascade (CSS) nommé Stylus, et fournissant un cadre CSS robuste, évolutif et conçus pour la compatibilité entre navigateurs et multi-plateformes.
+
+# Repository
+repo_name: skeletonic-docs
+repo_url: https://github.com/sebastienrousseau/skeletonic-docs
+# edit_uri: https://github.com/sebastienrousseau/skeletonic-docs/documentation/edit/main/1.0/docs/
+
+# Copyright
+copyright: "&copy; Sébastien Rousseau 2021."
+
+# Configuration
+docs_dir: docs/
+site_dir: site/
+
+theme:
+  name: 'material'
+  
+# 404 page
+  static_templates:
+    - 404.html
+
+# Font
+  font:
+    text: 'Open Sans'
+    code: 'Roboto Mono'
+  
+  custom_dir: theme/
+
+  # Language for theme localization
+  language: fr
+
+  palette:
+  - media: "(prefers-color-scheme: light)"
+    scheme: default
+    primary: black
+    toggle:
+      icon: material/toggle-switch-off-outline
+      name: Switch to dark mode
+  - media: "(prefers-color-scheme: dark)"
+    scheme: slate
+    primary: black
+    toggle:
+      icon: material/toggle-switch
+      name: Switch to light mode
+    
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+
+# Customization 
+extra_css:
+  - css/extra.css  
+
+extra:
+  alternate:
+    - name: English
+      link: /en/
+      lang: en
+    - name: Français
+      link: /fr/
+      lang: fr
+  search:
+    language: 'fr'    
+
+  # Social
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/sebastienrousseau/skeletonic-docs
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - md_in_html
+  - footnotes
+  - meta
+  - smarty
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - codehilite:
+      guess_lang: false
+      css_class: 'code'
+  - toc:
+      permalink: true
+
+plugins:
+  - search:
+      lang: fr
+  - i18n:
+      default_language: fr
+      default_language_only: fr
+      languages:
+        en: english
+        fr: français
+  - minify:
+      minify_html: true
+      minify_js: true
+      htmlmin_opts:
+          remove_comments: true
+      
+nav:
+- Introduction: "index.md"
+- Installation:
+  - RDC: "install/rdc.md"
+  - GitHub: "install/github.md"
+  - NPM: "install/npm.md"
+  - YARN: "install/yarn.md"
+- Commencer:
+  - Bonjour Skeletonic: "bonjour-skeletonic.md"
+  - Structure des dossiers: "structure-des-dossiers.md"
+- Animations: 
+  - Pour commencer: "animations.md"
+  - Bounce: "animations/bounce.md"
+  - Chameleon: "animations/chameleon.md"
+  - Fade: "animations/fade.md"
+  - Clignotement: "animations/clignotement.md"
+  - Pop: "animations/pop.md"
+  - Impulsions: "animations/impulsions.md"
+  - Spin: "animations/spin.md"
+  - Shake: "animations/shake.md"
+  - Vanish: "animations/vanish.md"
+  - Wobble: "animations/wobble.md"
+  - Zoom: "animations/zoom.md"
+- Boutons:
+  - Pour commencer: "buttons.md"  
+  - Les types: "buttons/types.md"
+  - Actions: "buttons/actions.md"
+  - États: "buttons/states.md"
+  - Styles: "buttons/styles.md"
+  - Groupes: "buttons/groups.md"
+- Cards:
+  - Pour commencer: "cards.md"  
+  - Les types: "cards/types.md"  
+  - Adaptative: "cards/adaptive.md"
+  - Héros: "cards/hero.md"
+  - List: "cards/list.md"
+  - Syntaxe: "cards/syntax.md"
+  - La vignette: "cards/thumbnail.md"
+  - Couleurs: "cards/colors.md"    
+- Code:
+  - Pour commencer: "code.md"    
