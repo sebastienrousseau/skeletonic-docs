@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1634" height="575" viewBox="0 0 1634 575">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="1634" height="575" fill="#F1F1F1" fill-rule="nonzero"/>
+    <g transform="translate(1 9)">
+      <text fill="#0A0B09" fill-rule="nonzero" font-family="OpenSans, Open Sans" font-size="30" transform="translate(976 434)">
+        <tspan x="0" y="32">Couleurs: #0047dd;</tspan>
+      </text>
+      <text fill="#0A0B09" fill-rule="nonzero" font-family="OpenSans, Open Sans" font-size="30" transform="translate(976 484)">
+        <tspan x="0" y="32">Contour: 1px;</tspan>
+      </text>
+      <text fill="#0A0B09" fill-rule="nonzero" font-family="OpenSans, Open Sans" font-size="30" transform="translate(976 384)">
+        <tspan x="0" y="32">Police de caractère: Open Sans</tspan>
+      </text>
+      <text fill="#0A0B09" fill-rule="nonzero" font-family="OpenSans-Light, Open Sans" font-size="21" font-weight="300" transform="translate(21 464)">
+        <tspan x="0" y="22">3rem</tspan>
+      </text>
+      <text fill="#0A0B09" fill-rule="nonzero" font-family="OpenSans-Light, Open Sans" font-size="21" font-weight="300" transform="translate(204 527)">
+        <tspan x="0" y="22">12rem</tspan>
+      </text>
+      <polygon fill="#0047DD" fill-rule="nonzero" points="91 520 379 520 379 448 91 448"/>
+      <polygon stroke="#334F91" stroke-width="1.008" points="91 520 379 520 379 448 91 448"/>
+      <text fill="#FFF" fill-rule="nonzero" font-family="OpenSans, Open Sans" font-size="27" transform="translate(166.202 462)">
+        <tspan x=".079" y="29">CONTENU</tspan>
+      </text>
+      <polygon fill="#0047DD" fill-rule="nonzero" points="451 520 739 520 739 448 451 448"/>
+      <polygon stroke="#334F91" stroke-width="1.008" points="451 519 739 519 739 447 451 447"/>
+      <text fill="#FFF" fill-rule="nonzero" font-family="OpenSans, Open Sans" font-size="27" transform="translate(526.202 465)">
+        <tspan x=".079" y="29">CONTENU</tspan>
+      </text>
+      <text fill="#0A0B09" fill-rule="nonzero" font-family="OpenSans-Light, Open Sans" font-size="21" font-weight="300" transform="translate(799 428)">
+        <tspan x="0" y="22">0.80rem</tspan>
+      </text>
+      <g fill="#0A0B09" fill-rule="nonzero" font-family="OpenSans-Light, Open Sans" font-size="21" font-weight="300" transform="translate(421 356)">
+        <text>
+          <tspan x="0" y="22">0.80re</tspan>
+        </text>
+        <text transform="translate(60.231)">
+          <tspan x="0" y="22">m</tspan>
+        </text>
+        <text transform="translate(278.558)">
+          <tspan x="0" y="22">0.80rem</tspan>
+        </text>
+      </g>
+      <text fill="#0A0B09" fill-rule="nonzero" font-family="OpenSans-Light, Open Sans" font-size="21" font-weight="300" transform="translate(799 491)">
+        <tspan x="0" y="22">0.80rem</tspan>
+      </text>
+      <line x1="749" x2="785" y1="447.5" y2="447.5" fill="#FFFFFE" fill-rule="nonzero"/>
+      <line x1="749" x2="785" y1="447.5" y2="447.5" stroke="#0A0B09" stroke-width="1.407"/>
+      <line x1="749" x2="785" y1="456.5" y2="456.5" fill="#FFFFFE" fill-rule="nonzero"/>
+      <path stroke="#0A0B09" stroke-width="1.407" d="M749,457.468481 L785,457.468481 M767,448 L767,457.468481"/>
+      <line x1="749" x2="785" y1="510.5" y2="510.5" fill="#FFFFFE" fill-rule="nonzero"/>
+      <line x1="749" x2="785" y1="510.5" y2="510.5" stroke="#0A0B09" stroke-width="1.407"/>
+      <line x1="749" x2="785" y1="519.5" y2="519.5" fill="#FFFFFE" fill-rule="nonzero"/>
+      <path stroke="#0A0B09" stroke-width="1.407" d="M749,520.468481 L785,520.468481 M767,511 L767,520.468481"/>
+      <line x1="739.5" x2="739.5" y1="403" y2="439" fill="#FFFFFE" fill-rule="nonzero"/>
+      <line x1="739.5" x2="739.5" y1="403" y2="439" stroke="#0A0B09" stroke-width="1.414"/>
+      <line x1="730.5" x2="730.5" y1="403" y2="439" fill="#FFFFFE" fill-rule="nonzero"/>
+      <path stroke="#0A0B09" stroke-width="1.414" d="M730.526316,403 L730.526316,439 M740,421 L730.526316,421"/>
+      <line x1="460.5" x2="460.5" y1="403" y2="439" fill="#0A0B09" fill-rule="nonzero"/>
+      <line x1="460.5" x2="460.5" y1="403" y2="439" stroke="#0A0B09" stroke-width="1.414"/>
+      <line x1="451.5" x2="451.5" y1="403" y2="439" fill="#0A0B09" fill-rule="nonzero"/>
+      <line x1="451.5" x2="451.5" y1="403" y2="439" stroke="#0A0B09" stroke-width="1.414"/>
+      <line x1="460" x2="451" y1="420.5" y2="420.5" fill="#0A0B09" fill-rule="nonzero"/>
+      <line x1="460" x2="451" y1="420.5" y2="420.5" stroke="#0A0B09" stroke-width="1.414"/>
+      <text fill="#0A0B09" fill-rule="nonzero" font-family="OpenSans, Open Sans" font-size="45" transform="translate(976 261)">
+        <tspan x="0" y="48">Détails</tspan>
+      </text>
+      <text fill="#0A0B09" fill-rule="nonzero" font-family="OpenSans, Open Sans" font-size="45" transform="translate(462 261)">
+        <tspan x="0" y="48">Rembourrage</tspan>
+      </text>
+      <text fill="#0A0B09" fill-rule="nonzero" font-family="OpenSans, Open Sans" font-size="45" transform="translate(30 261)">
+        <tspan x="0" y="48">Dimensions</tspan>
+      </text>
+      <text fill="#0A0B09" fill-rule="nonzero" font-family="OpenSans, Open Sans" font-size="111" transform="translate(16)">
+        <tspan x="0" y="119">Anatomie d’un bouton contenu</tspan>
+      </text>
+      <line x1="2" x2="1613" y1="132.5" y2="132.5" fill="#FFFFFE" fill-rule="nonzero"/>
+      <line x2="1632.5" y1="154.5" y2="154.5" stroke="#0A0B09" stroke-width="3"/>
+      <text fill="#0A0B09" fill-rule="nonzero" font-family="OpenSans, Open Sans" font-size="60" transform="translate(30 153)">
+        <tspan x="0" y="64">principal</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

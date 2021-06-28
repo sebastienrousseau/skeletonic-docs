@@ -6,17 +6,21 @@ Les boutons sont utilisés pour initialiser l'action, soit pour aller sur une au
 
 ## Bouton de texte (Faible emphase)
 
+![Variation textuelle de l'état du bouton principal.](../assets/boutons/bouton-texte.svg)
+
 Les boutons de texte sont généralement utilisés pour des actions moins importantes, y compris celles situées dans les dialogues et les cartes. Dans les cartes, les boutons de texte aident à maintenir l'accent sur le contenu de la carte.
 
 === "Aperçu"
-    [Lien](https://skeletonic.io){ .button .link }
+    [Texte](https://skeletonic.io){ .button .link }
 
 === "Code"
     ```sh
-    <button type="button" class="link">Lien</button>
+    <button type="button" class="link">Texte</button>
     ```
 
 ## Bouton avec bordures (Accent moyen)
+
+![Une variation avec bordures du bouton principal.](../assets/boutons/bouton-bordure.svg)
 
 Les boutons avec bordures sont utilisés pour plus d'emphase que les boutons de texte. Ils contiennent des actions importantes, mais qui ne sont pas l'action principale d'une application.
 
@@ -25,10 +29,12 @@ Les boutons avec bordures sont utilisés pour plus d'emphase que les boutons de 
 
 === "Code"
     ```sh
-    <button type="button" class="link">Bordures</button>
+    <button type="button" class="primary-outline">Bordures</button>
     ```
 
 ## Bouton contenu (Accentuation élevée)
+
+![Variation contenue de l'état du bouton principal.](../assets/boutons/bouton-contenu.svg)
 
 Les boutons contenus ont plus d'importance, car ils utilisent un remplissage de couleur et une ombre. Ils contiennent des actions principales pour votre application.
 
@@ -37,5 +43,5 @@ Les boutons contenus ont plus d'importance, car ils utilisent un remplissage de 
 
 === "Code"
     ```sh
-    <button type="button" class="link">Contenu</button>
+    <button type="button" class="primary">Contenu</button>
     ```
