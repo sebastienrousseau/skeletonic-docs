@@ -14,8 +14,8 @@
   --cl-disable: #f1f3f4;
   --cl-grey-1000: #111114;
   --cl-grey-900: #2b2b2e;
-  --cl-grey-300:#c3c3c6;
-  --cl-grey-200:#dddde0;
+  --cl-grey-300: #c3c3c6;
+  --cl-grey-200: #dddde0;
   --cl-info: #008196;
   --cl-inverse: #fff;
   --cl-link: #1b6ec2;
@@ -252,7 +252,7 @@ a.button.danger-outline:hover,
   margin-bottom: 1.618rem;
   position: relative;
   transition: 0.3s;
-  }
+}
 
 .card-body,
 .card-content {
