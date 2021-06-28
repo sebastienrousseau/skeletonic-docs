@@ -4,7 +4,6 @@
 
 [logo]: assets/skeletonic-stylus-header.svg "Banner representing the Skeletonic Stylus Documentation Library"
 
-
 Thank you so much for wanting to contribute to the Skeletonic Stylus Library! There are a couple ways to help out.
 
 ## Evangelise
@@ -15,7 +14,7 @@ Just tell people about the Skeletonic Stylus Library. We believe that a bigger, 
 
 Here are guides for submitting issues and pull requests.
 
-### Bug Reports
+## Bug Reports
 
 If you encounter a bug that hasn't already been filed, please file a bug report. Let us know of things we should fix, things we should add, questions, etc.
 
@@ -31,11 +30,11 @@ Warning us of a bug is possibly the single most valuable contribution you can ma
 
 5) The issue will be fixed soon!
 
-### Code Contributions
+## Code Contributions
 
 Contributing code is one of the more difficult ways to contribute to the Skeletonic Stylus Library.
 
-#### Feature Requests
+## Feature Requests
 
 Filing feature requests is one of the most popular ways to contribute to the Skeletonic Stylus Library.
 
@@ -43,7 +42,7 @@ Is there some feature request that you'd like to code up yourself? Is there a fe
 
 Here's how to contribute code for a new feature to the Skeletonic Stylus Library. Pull Requests allow you to share your own code with us, and we can merge it into the main repo.
 
-#### Adding Code
+## Adding Code
 
 1) Fork the repo.
 
@@ -55,7 +54,7 @@ Here's how to contribute code for a new feature to the Skeletonic Stylus Library
 
 5) Run `npm run build` to trigger builds, and the new distribution files will be in the `dist/` folder ready to go.
 
-#### Fixing an Issue
+## Fixing an Issue
 
 Have you found a solution to an issue? Here is how you can submit your code to the Skeletonic Stylus Library.
 
