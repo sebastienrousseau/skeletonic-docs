@@ -1,4 +1,4 @@
-# Skeletonic Stylus Library Feature request
+# Skeletonic Stylus Library Documentation Feature request
 
 Suggest an idea to help us improve the Skeletonic Stylus Library
 
