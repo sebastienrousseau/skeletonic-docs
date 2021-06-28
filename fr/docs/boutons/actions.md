@@ -30,7 +30,7 @@ Utilisez celui-ci comme principal appel à l'action sur les interfaces.
 
 ### Secondaire
 
-Pour les actions secondaires. Excellent pour garder un oeil sur les images principales d'une page. Avec un arrière-plan bien choisi et une bordure contrastante bien soulignée, le bouton secondaire attire l'attention sans donner une impression écrasante à l'utilisateur.
+Pour les actions secondaires. Excellent pour garder un œil sur les images principales d'une page. Avec un arrière-plan bien choisi et une bordure contrastante bien soulignée, le bouton secondaire attire l'attention sans donner une impression écrasante à l'utilisateur.
 
 === "Aperçu"
     [Secondaire](https://skeletonic.io){ .button .secondary }
