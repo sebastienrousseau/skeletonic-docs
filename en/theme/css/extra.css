@@ -245,15 +245,16 @@ a.button.danger-outline:hover,
 
 .card {
   background: 0 0;
-  border: 1.6 px solid var(--cl-grey-300);
   border-radius: 1.618rem;
+  border: 1.6 px solid var(--cl-grey-300);
   box-shadow: 0 3px 9px 0 var(--cl-grey-200);
   color: var(--cl-black);
   margin-bottom: 1.618rem;
   position: relative;
-  transition: .3s;
+  transition: 0.3s;
   }
 
-  .card-body, .card-content {
-    padding: 1.618rem;
-  }
+.card-body,
+.card-content {
+  padding: 1.618rem;
+}
