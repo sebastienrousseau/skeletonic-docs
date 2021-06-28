@@ -130,12 +130,12 @@ nav:
   - Vanish: "animations/vanish.md"
   - Zoom: "animations/zoom.md"
 - Boutons:
-  - Pour commencer: "buttons.md"  
-  - Les types: "buttons/types.md"
-  - Actions: "buttons/actions.md"
-  - États: "buttons/states.md"
-  - Styles: "buttons/styles.md"
-  - Groupes: "buttons/groups.md"
+  - Pour commencer: "boutons.md"  
+  - Les types: "boutons/types.md"
+  - Actions: "boutons/actions.md"
+  - États: "boutons/etats.md"
+  - Styles: "boutons/styles.md"
+  - Groupes: "boutons/groups.md"
 - Cards:
   - Pour commencer: "cards.md"  
   - Les types: "cards/types.md"  
