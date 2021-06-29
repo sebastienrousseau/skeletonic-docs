@@ -12,7 +12,7 @@ Text buttons are typically used for less important actions, including those loca
 
 ![A text variation of the primary button state.](../assets/buttons/button-text.svg)
 
-### Example
+### Example Text button
 
 === "Preview"
     [Link](https://skeletonic.io){ .button .link }
@@ -28,7 +28,7 @@ Text buttons are typically used for less important actions, including those loca
 
 Outlined buttons are used for more emphasis than text buttons due to the stroke. They contain actions that are important, but aren’t the primary action in an app.
 
-### Example
+### Example Outlined Button
 
 === "Preview"
     [Outlined](https://skeletonic.io){ .button .primary-outline }
@@ -44,7 +44,7 @@ Contained buttons have more emphasis, as they use a color fill and shadow. They 
 
 ![A contained variation of the primary button state.](../assets/buttons/button-contained.svg)
 
-### Example
+### Example Contained button
 
 === "Preview"
     [Contained](https://skeletonic.io){ .button .primary }
