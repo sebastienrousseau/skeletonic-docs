@@ -1,10 +1,9 @@
-![alt text][logo]
 
-[logo]: ./assets/skeletonic-stylus-fr.svg "Bannière représentant la bibliothèque Stylus Skeletonic"
+# La bibliothèque Stylus Skeletonic
 
-## La bibliothèque Stylus Skeletonic
+![Bannière représentant la bibliothèque Stylus Skeletonic](./assets/skeletonic-stylus-fr.svg)
 
-### Introduction
+## Introduction
 
 La [bibliothèque Stylus Skeletonic](https://github.com/sebastienrousseau/skeletonic-stylus) est une bibliothèque légère, intuitive, accessible et ultra réactive, écrite avec le pré-processeur de feuilles de style en cascade (CSS) nommé [Stylus](https://stylus-lang.com/), et fournissant un cadre CSS robuste, évolutif, nécessaires pour la compatibilité entre navigateurs et multi-plateformes.
 
@@ -12,14 +11,14 @@ La bibliothèque fournit des éléments de conception de matériaux modulaires, 
 
 Que vous cherchiez à intégrer un ensemble commun de composants dans un site Web ou une application mobile existante, ou que vous ayez besoin de plus de contrôles sur les composants, nous avons ce qu'il vous faut.
 
-### Support de langues
+## Support de langues
 
 Vous pouvez découvrir ci-desous notre support de langues pour la documentation.
 
--  Documentation Anglaise [(https://docs.skeletonic.io/en)](https://docs.skeletonic.io/en)
--  Documentation Française [(https://docs.skeletonic.io/fr)](https://docs.skeletonic.io/fr)
+-  Documentation Anglaise [(https://docs.skeletonic.io/en/)](https://docs.skeletonic.io/en/)
+-  Documentation Française [(https://docs.skeletonic.io/fr/)](https://docs.skeletonic.io/fr/)
 
-### Ressources
+## Ressources
 
 Voici quelques autres bons endroits pour trouver des informations sur la bibliothèque Stylus Skeletonic.
 
