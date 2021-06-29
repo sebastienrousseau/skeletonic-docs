@@ -21,8 +21,8 @@
   "MD030": {
     "ol_single": 1,
     "ol_multi": 1,
-    "ul_single": 2,
-    "ul_multi": 2
+    "ul_single": 3,
+    "ul_multi": 3
   },
   "MD032": true,
   "MD035": true,

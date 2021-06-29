@@ -1,4 +1,3 @@
-
 # La bibliothèque Stylus Skeletonic
 
 ![Bannière représentant la bibliothèque Stylus Skeletonic](./assets/skeletonic-stylus-fr.svg)
@@ -13,10 +12,10 @@ Que vous cherchiez à intégrer un ensemble commun de composants dans un site We
 
 ## Support de langues
 
-Vous pouvez découvrir ci-desous notre support de langues pour la documentation.
+Vous pouvez découvrir ci-dessous notre support de langues pour la documentation.
 
--  Documentation Anglaise [(https://docs.skeletonic.io/en/)](https://docs.skeletonic.io/en/)
--  Documentation Française [(https://docs.skeletonic.io/fr/)](https://docs.skeletonic.io/fr/)
+-   Documentation Anglaise [(https://docs.skeletonic.io/en/)](https://docs.skeletonic.io/en/)
+-   Documentation Française [(https://docs.skeletonic.io/fr/)](https://docs.skeletonic.io/fr/)
 
 ## Ressources
 
