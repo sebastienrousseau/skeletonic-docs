@@ -4,10 +4,11 @@ Help translate the Skeletonic Stylus Documentation into more languages
 
 ## How to contribute
 
-1. Clone the repository of the Skeletonic Stylus Documentation. This will becomes the base of your translation project.
-2. Send a pull request to [repo](https://github.com/sebastienrousseau/skeletonic-docs).
-3. If you don't know how to send a pull request, [create an issue](https://github.com/sebastienrousseau/skeletonic-docs/issues) and tell us where we can download your translation from.
-4. Your translation will be included in the next version of the Skeletonic Stylus Documentation.
++  Clone the repository of the Skeletonic Stylus Documentation. This will becomes the base of your translation project.
+
++  Send a pull request to [repo](https://github.com/sebastienrousseau/skeletonic-docs).
++  If you don't know how to send a pull request, [create an issue](https://github.com/sebastienrousseau/skeletonic-docs/issues) and tell us where we can download your translation from.
++  Your translation will be included in the next version of the Skeletonic Stylus Documentation.
 
 ## How do you find  your language code
 
