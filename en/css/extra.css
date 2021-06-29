@@ -1,0 +1,260 @@
+:root {
+  --bg-danger: #ffc0ad;
+  --bg-disable: #f1f3f4;
+  --bg-info: #f7ffff;
+  --bg-inverse: #fff;
+  --bg-link: #1b6ec2;
+  --bg-primary: #c6cdff;
+  --bg-secondary: #a9d2ff;
+  --bg-success: #a5dfa2;
+  --bg-tertiary: #777;
+  --bg-warning: #ffc286;
+  --cl-black: #000;
+  --cl-danger: #b2081a;
+  --cl-disable: #f1f3f4;
+  --cl-grey-1000: #111114;
+  --cl-grey-900: #2b2b2e;
+  --cl-grey-300: #c3c3c6;
+  --cl-grey-200: #dddde0;
+  --cl-info: #008196;
+  --cl-inverse: #fff;
+  --cl-link: #1b6ec2;
+  --cl-primary: #0047dd;
+  --cl-secondary: #0057a8;
+  --cl-success: #2e6430;
+  --cl-tertiary: #777;
+  --cl-warning: #993900;
+  --cl-white: #fff;
+  --link-color-active: #f00;
+  --link-color-focus: #f00;
+  --link-color-hover: #f00;
+  --link-color-visited: #800080;
+  --link-color: #00f;
+}
+
+:root > [data-md-color-scheme=slate] {
+  --md-default-bg-color: var(--cl-grey-1000);
+  --md-default-fg-color--light: #728096;
+  --md-typeset-a-color: #ff6349;
+}
+
+.button {
+  background: var(--bg-disable);
+  color: var(--cl-black);
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  max-width: 100%;
+  min-width: 10rem;
+  padding: 0.6rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: auto;
+}
+
+.button:hover {
+  opacity: 0.9;
+  text-decoration: none;
+  transition: all 150ms linear;
+}
+
+a.button.default,
+.default {
+  background: var(--bg-disable);
+  color: var(--cl-black);
+}
+
+a.button.active,
+.button:active {
+  background: var(--cl-grey-1000);
+  color: var(--cl-white);
+  opacity: 0.85;
+  text-decoration: none;
+  transition: all 150ms linear;
+}
+
+a.button.primary,
+.primary {
+  background: var(--cl-primary);
+  color: var(--cl-white);
+}
+
+a.button.secondary,
+.secondary {
+  background: var(--cl-secondary);
+  color: var(--cl-white);
+}
+
+a.button.tertiary,
+.tertiary {
+  background: var(--cl-tertiary);
+  color: var(--cl-white);
+}
+
+a.button.danger,
+.danger {
+  background: var(--cl-danger);
+  color: var(--cl-white);
+}
+
+a.button.info,
+.info {
+  background: var(--cl-info);
+  color: var(--cl-white);
+}
+
+a.button.link,
+.link {
+  background: 0 0;
+  border-color: transparent;
+  box-shadow: none;
+  color: var(--link-color);
+  min-width: auto;
+  text-decoration: none;
+}
+
+a.button.success,
+.success {
+  background: var(--cl-success);
+  color: var(--cl-white);
+}
+
+a.button.warning,
+.warning {
+  background: var(--cl-warning);
+  color: var(--cl-white);
+}
+
+a.button.primary-outline,
+.primary-outline {
+  background-color: var(--cl-white);
+  border: 1px solid var(--cl-primary);
+  color: var(--cl-primary);
+}
+
+a.button.primary-outline:hover,
+.primary-outline:hover {
+  background-color: var(--cl-primary);
+  color: var(--cl-white);
+  opacity: 1;
+  text-decoration: none;
+  transition: all 150ms linear;
+}
+
+a.button.secondary-outline,
+.secondary-outline {
+  background-color: var(--cl-white);
+  border: 1px solid var(--cl-secondary);
+  color: var(--cl-secondary);
+}
+
+a.button.secondary-outline:hover,
+.secondary-outline:hover {
+  background-color: var(--cl-secondary);
+  color: var(--cl-white);
+  opacity: 1;
+  text-decoration: none;
+  transition: all 150ms linear;
+}
+
+a.button.tertiary-outline,
+.tertiary-outline {
+  background-color: var(--cl-white);
+  border: 1px solid var(--cl-tertiary);
+  color: var(--cl-tertiary);
+}
+
+a.button.tertiary-outline:hover,
+.tertiary-outline:hover {
+  background-color: var(--cl-tertiary);
+  color: var(--cl-white);
+  opacity: 1;
+  text-decoration: none;
+  transition: all 150ms linear;
+}
+
+a.button.success-outline,
+.success-outline {
+  background-color: var(--cl-white);
+  border: 1px solid var(--cl-success);
+  color: var(--cl-success);
+}
+
+a.button.success-outline:hover,
+.success-outline:hover {
+  background-color: var(--cl-success);
+  color: var(--cl-white);
+  opacity: 1;
+  text-decoration: none;
+  transition: all 150ms linear;
+}
+
+a.button.info-outline,
+.info-outline {
+  background-color: var(--cl-white);
+  border: 1px solid var(--cl-info);
+  color: var(--cl-info);
+}
+
+a.button.info-outline:hover,
+.info-outline:hover {
+  background-color: var(--cl-info);
+  color: var(--cl-white);
+  opacity: 1;
+  text-decoration: none;
+  transition: all 150ms linear;
+}
+
+a.button.warning-outline,
+.warning-outline {
+  background-color: var(--cl-white);
+  border: 1px solid var(--cl-warning);
+  color: var(--cl-warning);
+}
+
+a.button.warning-outline:hover,
+.warning-outline:hover {
+  background-color: var(--cl-warning);
+  color: var(--cl-white);
+  opacity: 1;
+  text-decoration: none;
+  transition: all 150ms linear;
+}
+
+a.button.danger-outline,
+.danger-outline {
+  background-color: var(--cl-white);
+  border: 1px solid var(--cl-danger);
+  color: var(--cl-danger);
+}
+
+a.button.danger-outline:hover,
+.danger-outline:hover {
+  background-color: var(--cl-danger);
+  color: var(--cl-white);
+  opacity: 1;
+  text-decoration: none;
+  transition: all 150ms linear;
+}
+
+.radius {
+  border-radius: 1.618rem;
+}
+
+.card {
+  background: 0 0;
+  border-radius: 1.618rem;
+  border: 1.6 px solid var(--cl-grey-300);
+  box-shadow: 0 3px 9px 0 var(--cl-grey-200);
+  color: var(--cl-black);
+  margin-bottom: 1.618rem;
+  position: relative;
+  transition: 0.3s;
+}
+
+.card-body,
+.card-content {
+  padding: 1.618rem;
+}
