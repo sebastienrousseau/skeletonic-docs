@@ -152,11 +152,11 @@ docServe () {
 # docHelp: Present the Help Menu.
 docHelp() {  
   echo
-  echo "${Blue}┌ ${White}Skeletonic Stylus${Reset} ${Blue}───────────────┐${Reset}" 
-  echo "${Blue}│                                  │${Reset}" 
-  echo "${Blue}│ ${White}Online documentation generator ${Reset}  ${Blue}│${Reset}" 
-  echo "${Blue}│                                  │${Reset}" 
-  echo "${Blue}└──────────────────────────────────┘${Reset}" 
+  echo "${Blue}   ┌ ${White}Skeletonic Stylus${Reset} ${Blue}────────────────────────────────┐${Reset}" 
+  echo "${Blue}   │                                                   │${Reset}" 
+  echo "${Blue}   │ ${Blue}  Online documentation generator!${Reset}                 ${Blue}│${Reset}" 
+  echo "${Blue}   │                                                   │${Reset}" 
+  echo "${Blue}   └───────────────────────────────────────────────────┘${Reset}"
   echo
   echo "${Blue}[INFO]${Reset} ${White}Available options:${Reset}"
   echo "
