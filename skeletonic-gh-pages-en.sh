@@ -12,7 +12,7 @@
 # A script to generate site and push it to the gh-pages branch
 #
 
-version=(" $(git rev-parse --short HEAD) ")
+version=$(git rev-parse --short HEAD)
 
 # Get the latest commit in main branch
 commit=$(git log -n 1 --pretty='format:%C(auto)%h (%s, %ad)')
