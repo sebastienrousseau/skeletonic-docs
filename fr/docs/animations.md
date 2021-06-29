@@ -20,7 +20,7 @@ Voici la liste de toutes les animations et des transitions CSS :
 
 | Name          | Description                                     |
 | ------------- | ----------------------------------------------- |
-| [bounce](animations/bounce.md)         | Faits rebondir un élément de haut en bas. |
+| [bounce](animations/rebond.md)         | Faits rebondir un élément de haut en bas. |
 | [chameleon](animations/cameleon.md)   | Faits changer la couleur du texte ou de l'arrière-plan, en parcourant une gamme de couleurs prédéfinie. |
 | [fade](animations/fondu.md)             | Permet à un élément d'entrer ou de disparaître progressivement. |
 | [blink](animations/clignotement.md)           | Fait clignoter un élément. |

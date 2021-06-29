@@ -6,10 +6,10 @@ This table shows the types of cards available to you:
 
 | Card type          | Description                                |
 | ------------- | ----------------------------------------------- |
-| [Adaptive](adaptive.md)         | This card is highly customizable card that can contain any combination of text, speech, images, buttons, and input fields.  |
+| [Adaptive](adaptative.md)         | This card is highly customizable card that can contain any combination of text, speech, images, buttons, and input fields.  |
 | [Hero](hero.md)   | This card typically contains a single large image, one or more buttons, and a small amount of text. |
-| [List](list.md)             | This card is a scrolling list of items.  |
-| [Thumbnail](thumbnail.md)             | This card typically contains a single thumbnail image, some short text, and one or more buttons. |
+| [List](liste.md)             | This card is a scrolling list of items.  |
+| [Thumbnail](vignette.md)             | This card typically contains a single thumbnail image, some short text, and one or more buttons. |
 
 ## Common properties for all cards
 
