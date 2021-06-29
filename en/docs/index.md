@@ -1,8 +1,6 @@
 # The Skeletonic Stylus Library
 
-![alt text][logo]
-
-[logo]: ./assets/skeletonic-stylus.svg "Banner representing the Skeletonic Stylus Library"
+![Banner representing the Skeletonic Stylus Library](./assets/skeletonic-stylus.svg)
 
 ## Overview
 
@@ -14,8 +12,8 @@ Whether you're looking to integrate a common set of components into an existing 
 
 ## Languages
 
--  English [(docs.skeletonic.io)](https://docs.skeletonic.io)
--  Français [(docs.skeletonic.io)](https://docs.skeletonic.io/fr)
+-  English [(docs.skeletonic.io)](https://docs.skeletonic.io/en/)
+-  Français [(docs.skeletonic.io)](https://docs.skeletonic.io/fr/)
 
 ## Getting Started
 
