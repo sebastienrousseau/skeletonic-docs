@@ -8,14 +8,14 @@ Les boutons ont plusieurs styles de coloration qui peuvent être définis dans l
 
 | Class           | Description                                     |
 | --------------- | ----------------------------------------------- |
-| [.default](#default-button-style)      | Style de bouton par défaut. |
-| [.primary](#primary-button-style)      | Style de bouton principale. |
-| [.secondary](#secondary-button-style)  | Style de bouton secondaire. |
-| [.danger](#danger-button-style)        | Style de bouton pour une action dangereuse ou négative. |
-| [.info](#info-button-style)            | Style de bouton info. |
-| [.link](#link-button-style)            | Style de bouton texte. |
-| [.success](#success-button-style)      | Style de bouton succès. |
-| [.warning](#warning-button-style)      | Style de bouton avertissement. |
+| [.default](#default-button-style)     | Style de bouton par défaut.|
+| [.primary](#primary-button-style)     | Style de bouton principale.|
+| [.secondary](#secondary-button-style) | Style de bouton secondaire.|
+| [.danger](#danger-button-style)       | Style de bouton pour une action dangereuse ou négative.|
+| [.info](#info-button-style)           | Style de bouton info.|
+| [.link](#link-button-style)           | Style de bouton texte.|
+| [.success](#success-button-style)     | Style de bouton succès.|
+| [.warning](#warning-button-style)     | Style de bouton avertissement.|
 
 ## Styles intégrés
 

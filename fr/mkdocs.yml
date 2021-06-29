@@ -1,6 +1,6 @@
 # Project information
 site_name: Les Docs Skeletonic
-# site_url: http://localhost:8000/fr/
+site_url: https://docs.skeletonic.io/fr/
 site_author: Sebastien Rousseau
 site_description: La bibliothèque Stylus Skeletonic est une bibliothèque légère, intuitive, accessible et ultra réactive écrite avec un pré-processeur de feuilles de style en cascade (CSS) nommé Stylus, et fournissant un cadre CSS robuste, évolutif et conçus pour la compatibilité entre navigateurs et multi-plateformes.
 
@@ -96,7 +96,6 @@ plugins:
       lang: fr
   - i18n:
       default_language: fr
-      default_language_only: fr
       languages:
         en: english
         fr: français
@@ -109,41 +108,41 @@ plugins:
 nav:
 - Introduction: "index.md"
 - Installation:
-  - RDC: "install/rdc.md"
   - GitHub: "install/github.md"
   - NPM: "install/npm.md"
+  - RDC: "install/rdc.md"
   - YARN: "install/yarn.md"
 - Commencer:
   - Bonjour Skeletonic: "bonjour-skeletonic.md"
   - Structure des dossiers: "structure-des-dossiers.md"
 - Animations: 
   - Pour commencer: "animations.md"
-  - Bounce: "animations/bounce.md"
-  - Chameleon: "animations/chameleon.md"
+  - Bounce: "animations/rebond.md"
+  - Caméléon: "animations/cameleon.md"
   - Clignotement: "animations/clignotement.md"
   - Fondu: "animations/fondu.md"
   - Oscillation: "animations/oscillation.md"
-  - Pop: "animations/pop.md"
+  - Modale: "animations/modale.md"
   - Pulsation: "animations/pulsation.md"
-  - Spin: "animations/spin.md"
+  - Rotation: "animations/rotation.md"
   - Tremblement: "animations/tremblement.md"
-  - Vanish: "animations/vanish.md"
+  - Disparition: "animations/disparition.md"
   - Zoom: "animations/zoom.md"
 - Boutons:
   - Pour commencer: "boutons.md"  
-  - Les types: "boutons/types.md"
   - Actions: "boutons/actions.md"
   - États: "boutons/etats.md"
+  - Groupes: "boutons/groupes.md"
+  - Les types: "boutons/types.md"
   - Styles: "boutons/styles.md"
-  - Groupes: "boutons/groups.md"
-- Cards:
-  - Pour commencer: "cards.md"  
-  - Les types: "cards/types.md"  
-  - Adaptative: "cards/adaptive.md"
-  - Héros: "cards/hero.md"
-  - List: "cards/list.md"
-  - Syntaxe: "cards/syntax.md"
-  - La vignette: "cards/thumbnail.md"
-  - Couleurs: "cards/colors.md"    
+- Cartes:
+  - Pour commencer: "cartes.md"  
+  - Adaptative: "cartes/adaptative.md"
+  - Couleurs: "cartes/couleurs.md"    
+  - Hero: "cartes/hero.md"
+  - La vignette: "cartes/vignette.md"
+  - Les types: "cartes/types.md"  
+  - Liste: "cartes/liste.md"
+  - Syntaxe: "cartes/syntaxe.md"
 - Code:
   - Pour commencer: "code.md"    
