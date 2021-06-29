@@ -43,6 +43,8 @@ jobs:
           CUSTOM_DOMAIN: docs.skeletonic.io
           CONFIG_FILE: en/docs/mkdocs.yml
           EXTRA_PACKAGES: build-base
+
+      - name: Bot installation
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "actions@github.com"
