@@ -1,8 +1,10 @@
+# The Skeletonic Stylus Library
+
 ![alt text][logo]
 
 [logo]: ./assets/skeletonic-stylus.svg "Banner representing the Skeletonic Stylus Library"
 
-## The Skeletonic Stylus Library
+## Overview
 
 The **[Skeletonic Stylus Library](https://github.com/sebastienrousseau/skeletonic-stylus)** is a lightweight, intuitive, accessible and ultra-responsive library based on the Stylus CSS language, providing a robust, scalable and cross-browser CSS framework.
 
@@ -12,8 +14,8 @@ Whether you're looking to integrate a common set of components into an existing 
 
 ## Languages
 
-- English [(docs.skeletonic.io)](https://docs.skeletonic.io)
-- Français [(docs.skeletonic.io)](https://docs.skeletonic.io/fr)
+-  English [(docs.skeletonic.io)](https://docs.skeletonic.io)
+-  Français [(docs.skeletonic.io)](https://docs.skeletonic.io/fr)
 
 ## Getting Started
 
@@ -23,7 +25,7 @@ Whether you're looking to integrate a common set of components into an existing 
 
 Here are some other great places to find information about the Skeletonic Stylus Library.
 
-| name           | description                                      | link                                                            |
+| Name           | Description                                      | Link                                                            |
 |----------------|--------------------------------------------------|-----------------------------------------------------------------|
 | Documentation       | Documentation of the Skeletonic Stylus Library. | [visit &rarr;](https://docs.skeletonic.io)                          |
 | Source Code    | Learn how Skeletonic CSS works under the hood.            | [visit &rarr;](https://github.com/sebastienrousseau/skeletonic-stylus)                  |
