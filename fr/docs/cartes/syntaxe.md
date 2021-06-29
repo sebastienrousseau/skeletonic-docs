@@ -1,20 +1,20 @@
-# Basic syntax
+# Syntaxe de base
 
 ![Bannière représentant la bibliothèque Stylus Skeletonic](../assets/skeletonic-stylus-titre.svg)
 
-In order to create a basic card, you will need to:
+Afin de créer une carte de base, vous devrez :
 
-- Use .card with a div tag to create the outer container
-- Add the .card-content class to an inner div tag to create the card content
+-  Utilisez .card avec une balise div pour créer le conteneur externe
+-  Ajoutez la classe .card-content à une balise div interne pour créer le contenu de la carte
 
-These are the basic elements that constitute a basic card layout, as we can see from the following example:
+Ce sont les éléments de base qui constituent une disposition de carte de base, comme le montre l'exemple suivant :
 
 ```sh
 <div class=" flex-12">
     <div class="card">
         <div class="card-content">
-<h4>Title</h4> 
-<p>Lorem ipsum.</p>
+<h4>Titre</h4> 
+<p>Bonjour Skeletonic.</p>
         </div>
     </div>
 </div>
