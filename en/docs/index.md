@@ -12,8 +12,8 @@ Whether you're looking to integrate a common set of components into an existing 
 
 ## Languages
 
--  English [(docs.skeletonic.io)](https://docs.skeletonic.io/en/)
--  Français [(docs.skeletonic.io)](https://docs.skeletonic.io/fr/)
+-   English [(docs.skeletonic.io)](https://docs.skeletonic.io/en/)
+-   Français [(docs.skeletonic.io)](https://docs.skeletonic.io/fr/)
 
 ## Getting Started
 
