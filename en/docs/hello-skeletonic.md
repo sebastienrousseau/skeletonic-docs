@@ -144,6 +144,6 @@ Open your web browser, and visit <a href="http://127.0.0.1:8080" target="_blank"
 
 You should see the following page:
 
-![An preview of the hello skeletonic page](../assets/hello-skeletonic/hello-skeletonic.png)
+![An preview of the hello skeletonic page](./assets/hello-skeletonic/hello-skeletonic.png)
 
 Congratulations on creating, building, and running your first Skeletonic app! 🎉
