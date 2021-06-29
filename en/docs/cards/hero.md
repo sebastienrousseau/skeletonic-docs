@@ -12,4 +12,3 @@ A card that typically contains a single large image, one or more buttons, and te
 | images | Array of images | Image displayed at the top of the card. Aspect ratio 16:9. |
 | buttons | Array of action objects | Set of actions applicable to the current card. Maximum 6. |
 | tap | Action object | Activated when the user taps on the card itself. |
-
