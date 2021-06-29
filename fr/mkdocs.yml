@@ -1,6 +1,7 @@
 # Project information
 site_name: Les Docs Skeletonic
-site_url: https://docs.skeletonic.io/fr/
+site_url: ""
+use_directory_urls: false
 site_author: Sebastien Rousseau
 site_description: La bibliothèque Stylus Skeletonic est une bibliothèque légère, intuitive, accessible et ultra réactive écrite avec un pré-processeur de feuilles de style en cascade (CSS) nommé Stylus, et fournissant un cadre CSS robuste, évolutif et conçus pour la compatibilité entre navigateurs et multi-plateformes.
 

@@ -1,6 +1,7 @@
 # Project information
 site_name: Skeletonic Docs
-site_url: https://docs.skeletonic.io/en/
+site_url: ""
+use_directory_urls: false
 site_author: Sebastien Rousseau
 site_description: The Skeletonic Stylus Library Documentation.
 
