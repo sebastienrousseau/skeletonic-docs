@@ -39,3 +39,6 @@ git commit -m "$message" > /dev/null 2>&1
 git push origin gh-pages
 
 echo "[Success]: Deployment successful of v1.0.$version to gh-pages"
+
+cd ../ || exit
+rm -rf gh-pages 
