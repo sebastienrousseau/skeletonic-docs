@@ -1,0 +1,16 @@
+version: 2
+updates:
+  - package-ecosystem: "pip" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "daily"
+    labels:
+    - 'Type: Update (Dependency)'
+    - 'Target: Python (pip)'
+  - package-ecosystem: "github-actions"
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "daily"
+    labels:
+    - 'Type: Update (Dependency)'
+    - 'Target: GitHub Actions'
