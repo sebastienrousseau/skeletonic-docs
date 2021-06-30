@@ -6,7 +6,7 @@
 
 Thank you so much for wanting to contribute to the Skeletonic Stylus Library! There are a couple ways to help out.
 
-## Evangelise
+## Evangelize
 
 Just tell people about the Skeletonic Stylus Library. We believe that a bigger, more involved community makes for a better framework, and that better frameworks make the world a better place. We can always use more feedback.
 
