@@ -21,6 +21,7 @@ leaf-pygment/dist
 
 # mkdocs documentation
 /site
+/gh-pages
 
 # Logs
 *.log
