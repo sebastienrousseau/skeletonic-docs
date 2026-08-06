@@ -6,10 +6,10 @@
 #  ___) |   <  __/ |  __/ || (_) | | | | | (__  | |_| | (_) | (__\__ \
 # |____/|_|\_\___|_|\___|\__\___/|_| |_|_|\___| |____/ \___/ \___|___/
 #
-# Skeletonic Stylus Documentation v0.0.1
+# Skeletonic Stylus Documentation v0.0.2
 # https://docs.skeletonic.io/en
 #
-# Install MkDocs Themes for the Skeletonic Stylus Documentation (v0.0.1).
+# Install MkDocs Themes for the Skeletonic Stylus Documentation (v0.0.2).
 #
 # This build script has the following functions:
 #
