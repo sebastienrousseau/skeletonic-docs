@@ -6,7 +6,7 @@
 #  ___) |   <  __/ |  __/ || (_) | | | | | (__  | |_| | (_) | (__\__ \
 # |____/|_|\_\___|_|\___|\__\___/|_| |_|_|\___| |____/ \___/ \___|___/
 #
-# Skeletonic Stylus Documentation v0.0.1
+# Skeletonic Stylus Documentation v0.0.2
 # https://docs.skeletonic.io/en
 #
 # Deploy documentation to gh-pages
@@ -32,7 +32,7 @@ set -o errexit -o nounset
 
 echo "Preparing to build and deploy documentation"
 
-if [ -z "${"GH_USER_NAME"}" ] || [ -z "${"GH_USER_EMAIL"}" ] || [ -z "${"GH_TOKEN"}" ] || [ -z "${"GH_REF"}" ]; then
+if [ -z "${GH_USER_NAME}" ] || [ -z "${GH_USER_EMAIL}" ] || [ -z "${GH_TOKEN}" ] || [ -z "${GH_REF}" ]; then
     echo "Missing environment variables. Aborting"
     exit 1
 fi;
